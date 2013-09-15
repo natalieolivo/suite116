@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/jquery-1.9.1.js"></script>
+		<style>
+			/* reset */
+			body, figure { margin: 0; }
+			ul { list-style: none; }
+			ul li { display: inline-block; }
+
+			nav { 
+				background: #000; 
+				color: #fff;
+				position: fixed;
+				width: 100%;
+				height: 40px;
+				z-index: 1;				
+			}
+			header {
+				position: relative;
+			}
+			.page header figure {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 999;
+			}
+			.page img { display: block; }			
+						
+			.page figure {
+				position: relative;
+			}
+			.page figure.first img {
+				padding-top: 40px;
+			}		
+			.page figure figcaption.banner {
+				background: rgba(204,0,0, .70);
+				height: 135px;
+				font-size: 24px;				
+				width: 100%;				
+				color: #fff;
+			}
+			.page section {
+				padding: 0 50px;
+			}
+
+			/** table display centering **/
+			.is-table p { 
+				width: 50%;
+  				margin: 0 auto;
+			}
+
+			.page figure figcaption {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 90%;
+				
+				box-sizing: border-box;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);				
+				transform: translate(-50%, -50%);								
+			}
+			.page figure figcaption.bottom-anchor {
+				/*top: 10px;*/
+			}
+			.page figure figcaption.block-text {				
+				font-size: 48px;
+				background: rgba(0,0,0,.83);				
+				color: #cc3333;
+				padding: 20px;				
+			}
+			section.page { 
+				width: 90%;
+				background: #d1d1cf; 
+				max-width: 1000px;
+				margin: 0 auto;				
+			}
+			section.page img {
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>		
+		<section class="page">
+			<header>
+				<nav>
+					<ul>
+						<li>Back Home</li>
+						<li>Rates</li>
+						<li>Map</li>
+						<li>Floor Plan</li>
+						<li>About the Suite</li>
+					</ul>
+					<figure>
+						<img src="imgs/logo.png" class="logo" />
+					</figure>
+				</nav>			
+			</header>
+			<section>
+				<figure class="first">
+					<img src="imgs/suite-01.jpg" />
+					<figcaption class="banner is-table top-anchor">
+						<p>Make it Memorable, Make it last, at our Harlem Suite</p>
+					</figcaption>					
+					<figcaption class="block-text center-block bottom-anchor">A Harlem Event Space with Class & Style ...</figcaption>
+				</figure>
+				<figure>
+					<img src="imgs/suite-02.jpg" />
+				</figure>
+				<figure>
+					<img src="imgs/suite-03.jpg" />
+				</figure>
+				<figure>
+					<img src="imgs/suite-04.jpg" />
+				</figure>
+				<figure>
+					<img src="imgs/suite-05.jpg" />
+				</figure>
+			</section>
+		</section>
+		<script>
+		(function($){
+			$("nav").css("width", $(".page").width());
+			$(window).on("resize", function() { 
+				$("nav").css("width", $(".page").width())
+			});	
+		}(jQuery));
+		</script>
+	</body>
+</html>

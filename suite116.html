@@ -5,7 +5,10 @@
 		<style>
 			/* reset */
 			body, figure, p, ul { margin: 0; }
-			ul { list-style: none; }
+			ul { 
+				list-style: none; 
+				padding: 0;
+			}
 			ul li { display: inline-block; }			
 			
 			/* fonts */
@@ -37,8 +40,7 @@
 			nav {
 				font-family: "Justus Bold"; 
 				font-variant:small-caps;
-				background: #000; 
-				color: #fff;
+				background: #000; 				
 				position: fixed;
 				width: 100%;
 				height: 40px;
@@ -47,7 +49,11 @@
 				letter-spacing: 1px;								
 			}
 			nav li {
-				margin-right: 24px;
+				margin: 7px 24px 0 0;
+			}
+			nav li a { 
+				text-decoration: none;
+				color: #fff; 
 			}
 			header {
 				position: relative;
@@ -73,6 +79,8 @@
 				width: 100%;				
 				color: #fff;
 				padding: 19px 0 19px 44px;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
 			}
 			.page section {
 				padding: 0 50px;
@@ -114,7 +122,7 @@
 				display: block;
 			}
 			section.page { 
-				width: 90%;
+				width: 96%;
 				background: #d1d1cf; 
 				max-width: 1000px;
 				margin: 0 auto;				
@@ -126,6 +134,53 @@
 				max-width: 100%;
 			}
 
+			/* TABLET BREAKPOINTS */
+			@media (max-width: 860px) {
+				.page figure figcaption.banner {
+					font-size: 30px;
+				}
+				.page figure figcaption.block-text {
+					font-family: 'Justus Roman';				
+					font-size: 50px;
+					background: rgba(0,0,0,.70);				
+					color: #e21d1d;
+					padding: 20px;
+					line-height: 50px;
+					text-shadow: rgba(0,0,0,0.80) 2px 0;				
+				}
+				.page section {
+					padding: 0px;
+				}
+				.page figure figcaption.top-anchor {
+					top: 25%;
+				}	
+			}
+			@media (max-width: 768px) {
+				nav ul:before { 
+					content: " ";
+					width: 30px;
+					height: 30px;
+					background: yellow;
+				}
+				nav ul { 
+					position: absolute; 
+					right: 0;
+				}
+				nav ul li { display: none; }
+				.page header figure {
+					left: 0;
+					right: auto;
+					width: 15%;
+				}
+				section.page .header figure img,
+				section.page figure.first img {
+					display: block;
+				}
+				section.page figure img {
+					display: none;
+				}
+			}
+
 		</style>
 	</head>
 	<body>		
@@ -133,11 +188,11 @@
 			<header>
 				<nav>
 					<ul>
-						<li>Back Home</li>
-						<li>Rates</li>
-						<li>Map</li>
-						<li>Floor Plan</li>
-						<li>About the Suite</li>
+						<li><a href="#">Back Home</a></li>
+						<li><a href="#">Rates</a></li>
+						<li><a href="#">Map</a></li>
+						<li><a href="#">Floor Plan</a></li>
+						<li><a href="#">About the Suite</a></li>
 					</ul>
 					<figure>
 						<img src="imgs/logo.png" class="logo" />

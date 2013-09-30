@@ -82,14 +82,22 @@
 
 			nav {
 				font-family: "Justus Bold"; 
-				font-variant:small-caps;
-				background: #000; 				
+				font-variant:small-caps;								
 				position: fixed;
 				width: 100%;
 				height: 40px;
 				z-index: 1;
 				font-size: 18px;
-				letter-spacing: 1px;								
+				letter-spacing: 1px;
+
+				background: -moz-linear-gradient(left,  rgba(15,15,15,1) 0%, rgba(15,15,15,1) 64%, rgba(108,108,108,1) 78%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(15,15,15,1)), color-stop(64%,rgba(15,15,15,1)), color-stop(78%,rgba(108,108,108,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* IE10+ */
+				background: linear-gradient(to right,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* W3C */
+
+
 			}
 			nav ul { margin-left: 20px; }
 			nav li {
@@ -214,14 +222,7 @@
 				section.page header figure img,
 				section.page figure.first img {
 					display: block;
-				}
-				.page figure figcaption span.icon-arrow-right {
-					display: block;
-					position: absolute;
-					right: 10%;
-					bottom: 10%;
-					font-size: 3em;
-				}
+				}				
 								
 			}
 			/** SMALL RES BREAKPOINTS **/
@@ -258,6 +259,14 @@
 					font-size: 1.1em;
 				}
                 
+				.page figure figcaption span.icon-arrow-right {
+					display: block;
+					position: absolute;
+					right: 10%;
+					bottom: 10%;
+					font-size: 3em;
+				}
+
                 /* utility classes */
                 .hide { display: none; }
                 .show { display: block; }

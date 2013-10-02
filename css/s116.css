@@ -1,0 +1,269 @@
+/* reset */
+body, figure, p, ul { margin: 0; }
+ul { 
+	list-style: none; 
+	padding: 0;
+}
+ul li { display: inline-block; }			
+
+/* fonts */
+@font-face {
+	font-family: 'Always Forever';
+		src: url('../fonts/always_forever-webfont.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/always_forever-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../fonts/always_forever-webfont.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/always_forever-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/always_forever-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Justus Bold';
+		src: url('../fonts/justus-bold-webfont.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/justus-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../fonts/justus-bold-webfont.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/justus-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/justus-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Justus Roman';
+		src: url('../fonts/justus-roman-webfont.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/justus-roman-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../fonts/justus-roman-webfont.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/justus-roman-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/justus-roman-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'icomoon';
+		src:url('../fonts/icomoon.eot');
+		src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/icomoon.woff') format('woff'),
+			url('../fonts/icomoon.ttf') format('truetype'),
+			url('../fonts/icomoon.svg#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-arrow-right {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;				
+}
+.icon-arrow-right:before {
+	content: "\e000";
+}
+
+nav {
+	font-family: "Justus Bold"; 
+	font-variant:small-caps;								
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	z-index: 1;
+	font-size: 18px;
+	letter-spacing: 1px;
+
+	background: -moz-linear-gradient(left,  rgba(15,15,15,1) 0%, rgba(15,15,15,1) 64%, rgba(108,108,108,1) 78%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(15,15,15,1)), color-stop(64%,rgba(15,15,15,1)), color-stop(78%,rgba(108,108,108,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* W3C */
+
+}
+nav ul { 
+	margin-left: 20px; 
+}
+nav li {
+	margin: 7px 2.4% 0 0;
+}
+nav li a { 
+	text-decoration: none;
+	color: #fff; 
+}
+nav li a:hover {
+	text-shadow: 1px 1px 4px #fff;
+}
+header {
+	position: relative;
+}
+.page header figure {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+}
+.page img { display: block; }			
+		
+.page figure {
+	position: relative;
+}
+.page figure.first img {
+	padding-top: 40px;
+}		
+.page figure figcaption.banner {
+	font-family: "Always Forever";
+	background: rgba(204,0,0, .70);				
+	font-size: 40px;				
+	width: 100%;				
+	color: #fff;
+	padding: 19px 0 19px 44px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.page section {
+	padding: 0 50px;
+}
+
+/** table display centering **/
+.is-table p { 
+width: 50%;
+	margin: 0 auto;
+}
+
+.page figure figcaption {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 90%;
+
+box-sizing: border-box;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);				
+transform: translate(-50%, -50%);								
+}
+.page figure figcaption.top-anchor {
+top: 21%;
+}
+.page figure figcaption.bottom-anchor {
+top: 64%;
+}
+.page figure figcaption.block-text {
+font-family: 'Justus Roman';				
+font-size: 4.6em;
+background: rgba(0,0,0,.70);				
+color: #e21d1d;
+padding: 2%;
+line-height: 1em;
+text-shadow: rgba(0,0,0,0.80) 2px 0;				
+}
+.page figure figcaption span {
+display: block;
+}
+.page figure figcaption span.icon-arrow-right {
+display: none;
+}
+section.page { 
+width: 96%;
+background: #d1d1cf; 
+max-width: 1000px;
+margin: 0 auto;				
+}
+section.page header figure {
+width: 25%;
+}
+section.page img {
+max-width: 100%;
+}
+
+/* MIDWAY BREAKPOINTS */
+@media (max-width: 860px) {
+.page figure figcaption.banner {
+	font-size: 30px;
+}
+.page figure figcaption.block-text {								
+	font-size: 2.3em;
+	line-height: 1.1em;	
+}
+.page section {
+	padding: 0px;
+}
+
+.page figure figcaption.bottom-anchor {
+	top: 78%;
+}
+.icon-arrow-right {
+	display: block;
+	position: absolute;
+	right: 0;
+}
+}
+@media (max-width: 768px) {
+.page figure figcaption.banner {
+	padding-left: 13%;
+}
+.page header figure { width: 10%; }
+section.page header figure img,
+section.page figure.first img {
+	display: block;
+}				
+				
+}
+/** SMALL RES BREAKPOINTS **/
+@media (max-width: 532px) {
+nav ul { cursor: pointer; }
+nav ul:before { 
+	content: "-";
+	width: 1em;
+	height: 1.1em;
+	font-size: 2em;
+	background: rgb(209, 17, 17);
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Georgia", serif;
+	font-weight: normal;					
+}
+nav ul.js-expanded {
+	background: black;
+	width: 10em;
+	padding: 0 0 .4em;					
+}
+nav ul.js-expanded li { margin: 1em .6em; }				
+nav ul.js-expanded:before {
+	content: "+";
+}												
+section.page figure img {
+	display: none;
+}
+.page figure figcaption.top-anchor {
+	top: 40%;
+}
+.page figure figcaption.block-text {								
+	font-size: 1.1em;
+}
+
+.page figure figcaption span.icon-arrow-right {
+	display: block;
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+	font-size: 3em;
+}
+
+/* utility classes */
+.hide { display: none; }
+.show { display: block; }
+}

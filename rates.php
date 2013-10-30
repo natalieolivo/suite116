@@ -6,7 +6,7 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'home.php';?>
+			<?php include 'rates/main.php';?>
 		</section>
 		<?php include 'scripts.php';?>		
 	</body>		

@@ -1,0 +1,34 @@
+{
+"specialRateText":"(5) hour special",
+"hourRateText": "(1) hour",
+"rates":[{
+    "day":"Friday",
+    "specialRate": "750",
+    "hourRate": "175"
+  },
+  {
+    "day": "Saturday",
+    "specialRate": "800",
+    "hourRate": "175"
+  },
+  {
+    "day": "Sunday",
+    "specialRate": "700",
+    "hourRate": "150"
+  },
+  {
+    "day": "Monday-Thursday",
+    "specialRate": "600",
+    "hourRate": "125"
+  }],
+  "securityRate": "120",
+  "additionalInfo": [{
+     "info" : "Note: Security is required for all events that extend past 10pm."
+  },
+  {
+     "info" : "*Rates may vary for off peak hours."
+  },
+  {
+     "info" : "***Events held within 30 days of booking will receive %10 off of total cost of rental."
+  }]
+}

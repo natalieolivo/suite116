@@ -1,3 +1,2 @@
-<section><!-- Home Template -->
-	These are the rates!!!
-</section>
+<script type="text/javascript" src="js/rates.js"></script>
+

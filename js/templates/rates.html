@@ -1,0 +1,17 @@
+<div id="services">
+	<h3>Suite 116 Price list </h3>
+	<ul>    
+		{{#each rates}}
+			<li><em>{{day}}</em></li>
+			<li>{{../specialRateText}} &ndash; ${{specialRate}}</li>
+			<li>{{../hourRateText}} &ndash; ${{hourRate}}</li>
+		{{/each}}
+	</ul>
+	<h2><em>Additional Info:</em></h2>
+	<h4>**Security: ${{securityRate}}</h4>
+	<ul>
+		{{#additionalInfo}}			
+			<li>{{info}}</li>
+		{{/additionalInfo}}		
+	</ul>
+</div>

@@ -20,7 +20,3 @@
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="suite116">Tweet</a>		
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="dark"></fb:like>		
-<script id="template" type="text/x-handlebars-template">
-		<div> My title: {{ title }} </div>
-</script>
-<script type="text/javascript" src="js/data.js"></script>

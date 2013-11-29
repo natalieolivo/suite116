@@ -1,5 +1,4 @@
 
-// get the data from a json call, js/data/rates.json
 $(document).ready(function(){  
   var getPageData = function() {
     var success = function (data) {
@@ -7,7 +6,7 @@ $(document).ready(function(){
     };
     $.ajax({
       dataType : "json",
-      url      : "js/data/rates.json",  
+      url      : "js/data/floor-plan.json",  
       success  : success,    
       error   : function(a, b, errorThrown) {
         //console.log(errorThrown);
@@ -15,7 +14,7 @@ $(document).ready(function(){
     }).done(function(data) {
       $.ajax({
         dataType: "html",
-        url: "js/templates/rates.html",  
+        url: "js/templates/floor-plan.html",  
         success: function(html){        
           var template = Handlebars.compile(html);                      
           $(".page").append(template(data));

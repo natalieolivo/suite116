@@ -177,6 +177,7 @@ display: none;
 }
 section.page { 
 width: 96%;
+min-height: 600px;
 background: #d1d1cf; 
 max-width: 1000px;
 margin: 0 auto;				

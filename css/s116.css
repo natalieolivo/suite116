@@ -66,6 +66,22 @@ you can use the generic selector below, but it's slower:
 .icon-arrow-right:before {
 	content: "\e000";
 }
+.icon-twitter {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;	
+	color: rgba(204,0,0, .70);
+	text-decoration: none;
+	font-size: 2em;
+}
+.icon-twitter:before {
+	content: "\e600";
+}
 
 nav {
 	font-family: "Justus Bold"; 
@@ -91,7 +107,7 @@ nav ul {
 nav li {
 	margin: 7px 2.4% 0 0;
 }
-nav li a { 
+nav li a {
 	text-decoration: none;
 	color: #fff; 
 }
@@ -131,132 +147,147 @@ header {
 
 /** table display centering **/
 .is-table p { 
-width: 50%;
+	width: 50%;
 	margin: 0 auto;
 }
 
 .page figure figcaption {
-position: absolute;
-top: 50%;
-left: 50%;
-width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90%;
 
-box-sizing: border-box;
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);				
-transform: translate(-50%, -50%);								
+	box-sizing: border-box;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);				
+	transform: translate(-50%, -50%);								
 }
 .page figure figcaption.top-anchor {
-top: 21%;
+	top: 21%;
 }
 .page figure figcaption.bottom-anchor {
-top: 64%;
+	top: 64%;
 }
 .page figure figcaption.block-text {
-font-family: 'Justus Roman';				
-font-size: 4.6em;
-background: rgba(0,0,0,.70);				
-color: #e21d1d;
-padding: 2%;
-line-height: 1em;
-text-shadow: rgba(0,0,0,0.80) 2px 0;				
+	font-family: 'Justus Roman';				
+	font-size: 4.6em;
+	background: rgba(0,0,0,.70);				
+	color: #e21d1d;
+	padding: 2%;
+	line-height: 1em;
+	text-shadow: rgba(0,0,0,0.80) 2px 0;				
 }
 .page figure figcaption span {
-display: block;
+	display: block;
 }
 .page figure figcaption span.icon-arrow-right {
-display: none;
+	display: none;
 }
 section.page { 
-width: 96%;
-min-height: 600px;
-background: #d1d1cf; 
-max-width: 1000px;
-margin: 0 auto;				
+	width: 96%;
+	min-height: 600px;
+	background: #eee; 
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;				
 }
 section.page header figure {
-width: 25%;
+	width: 25%;
 }
 section.page img {
-max-width: 100%;
+	max-width: 100%;
 }
 
 /* MIDWAY BREAKPOINTS */
 @media (max-width: 860px) {
-.page figure figcaption.banner {
+	.page figure figcaption.banner {
 	font-size: 30px;
-}
-.page figure figcaption.block-text {								
+	}
+	.page figure figcaption.block-text {								
 	font-size: 2.3em;
 	line-height: 1.1em;	
-}
-.page section {
-	padding: 0px;
+	}
+	.page section {
+		padding: 0px;
+	}
+
+	.page figure figcaption.bottom-anchor {
+		top: 78%;
+	}
+	.icon-arrow-right {
+		display: block;
+		position: absolute;
+		right: 0;
+	}
 }
 
-.page figure figcaption.bottom-anchor {
-	top: 78%;
-}
-.icon-arrow-right {
-	display: block;
-	position: absolute;
-	right: 0;
-}
-}
 @media (max-width: 768px) {
-.page figure figcaption.banner {
-	padding-left: 13%;
+	.page figure figcaption.banner {
+		padding-left: 13%;
+	}
+	.page header figure { width: 10%; }
+	section.page header figure img,
+	section.page figure.first img {
+		display: block;
+	}				
 }
-.page header figure { width: 10%; }
-section.page header figure img,
-section.page figure.first img {
-	display: block;
-}				
-				
-}
+
 /** SMALL RES BREAKPOINTS **/
 @media (max-width: 532px) {
-nav ul { cursor: pointer; }
-nav ul:before { 
-	content: "-";
-	width: 1em;
-	height: 1.1em;
-	font-size: 2em;
-	background: rgb(209, 17, 17);
-	display: block;
-	text-align: center;
-	vertical-align: middle;
-	font-family: "Georgia", serif;
-	font-weight: normal;					
-}
-nav ul.js-expanded {
-	background: black;
-	width: 10em;
-	padding: 0 0 .4em;					
-}
-nav ul.js-expanded li { margin: 1em .6em; }				
-nav ul.js-expanded:before {
-	content: "+";
-}												
-section.page figure img {
-	display: none;
-}
-.page figure figcaption.top-anchor {
-	top: 40%;
-}
-.page figure figcaption.block-text {								
-	font-size: 1.1em;
+	nav ul { cursor: pointer; }
+	nav ul:before { 
+		content: "-";
+		width: 1em;
+		height: 1.1em;
+		font-size: 2em;
+		background: rgb(209, 17, 17);
+		display: block;
+		text-align: center;
+		vertical-align: middle;
+		font-family: "Georgia", serif;
+		font-weight: normal;					
+	}
+	nav ul.js-expanded {
+		background: black;
+		width: 10em;
+		padding: 0 0 .4em;					
+	}
+	nav ul.js-expanded li { margin: 1em .6em; }				
+	nav ul.js-expanded:before {
+		content: "+";
+	}												
+	section.page figure img {
+		display: none;
+	}
+	.page figure figcaption.top-anchor {
+		top: 40%;
+	}
+	.page figure figcaption.block-text {								
+		font-size: 1.1em;
+	}
+	.page figure figcaption span.icon-arrow-right {
+		display: block;
+		position: absolute;
+		right: 10%;
+		bottom: 10%;
+		font-size: 3em;
+	}
+	/* utility classes */
+	.hide { display: none; }
+	.show { display: block; }
 }
 
-.page figure figcaption span.icon-arrow-right {
-	display: block;
-	position: absolute;
-	right: 10%;
-	bottom: 10%;
-	font-size: 3em;
+.social-twitter {
+	background: #fff;
+	position: absolute;	
+	padding: 10px !important;
+	/*-webkit-box-shadow: 0px 3px 6px 0px #242324;
+          box-shadow: 0px 3px 6px 0px #242324;*/
+}
+.social-facebook-like {
+	margin: 0 auto;
+	width: 96%;
+	max-width: 1000px;
 }
 
-/* utility classes */
-.hide { display: none; }
-.show { display: block; }
-}
+#mapWidget { font-size: 1.2em; width: 575px; height: 485px; color:#000; margin: 20px 0 0 15px; }

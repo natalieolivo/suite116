@@ -7,7 +7,8 @@
 	<meta name="description" content="Suite116 is one of New York City's elegant and most affordable event and party spaces for rent. Our Venue includes birthday parties, Baby showers, Private parties, Wedding Showers, Wedding Receptions, charity and fundraiser events, and private karaoke events in nyc"/>
 
 	<link href="css/reset.css" rel="stylesheet" />
-	<link href="css/s116.css" rel="stylesheet" />	
+	<link href="css/s116.css" rel="stylesheet" />
+	<link href="css/rates.css" rel="stylesheet" />
 	<script src="js/third-party/jquery-1.9.1.js"></script>
 	<script src="js/third-party/handlebars.js"></script>
 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>

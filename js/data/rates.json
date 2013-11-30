@@ -26,9 +26,9 @@
      "info" : "Note: Security is required for all events that extend past 10pm."
   },
   {
-     "info" : "*Rates may vary for off peak hours."
+     "info" : "Rates may vary for off peak hours."
   },
   {
-     "info" : "***Events held within 30 days of booking will receive %10 off of total cost of rental."
+     "info" : "Events held within 30 days of booking will receive %10 off of total cost of rental."
   }]
 }

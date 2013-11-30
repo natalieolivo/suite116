@@ -4,7 +4,7 @@
 		<li class="hide"><a href="rates.php">Rates</a></li>
 		<li class="hide"><a href="map.php">Map</a></li>						
 		<li class="hide"><a href="floor-plan.php">Floor Plan</a></li>
-		<li class="hide"><a href="about.php">About the Suite</a></li>
+		<li class="hide"><a href="email-us.php">Email Us</a></li>
 	</ul>
 	<figure>
 		<img src="imgs/logo.png" class="logo" />

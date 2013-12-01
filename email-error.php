@@ -6,8 +6,8 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<script type="text/javascript" src="js/email-success.js"></script>
+			<script type="text/javascript" src="js/email-error.js"></script>
 		</section>
 		<?php include 'scripts.php';?>		
 	</body>		
-</html>
+</html>	

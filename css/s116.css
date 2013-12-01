@@ -184,8 +184,7 @@ header {
 	display: none;
 }
 section.page { 
-	width: 96%;
-	min-height: 600px;
+	width: 96%;	
 	background: #eee; 
 	max-width: 1000px;
 	margin: 0 auto;
@@ -278,7 +277,7 @@ section.page img {
 }
 
 .social-twitter {
-	background: gold;
+	background: rgb(233, 213, 106);
 	position: absolute;	
 	padding: 10px !important;
 	/*-webkit-box-shadow: 0px 3px 6px 0px #242324;

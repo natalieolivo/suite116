@@ -1,5 +1,5 @@
 
-<section class="social-twitter">
+<section class="social-twitter">    
     <script>
         (function(w, d){
             var urlEncoded = 'url='+encodeURIComponent(location.href).replace(/%20/g,'+'),
@@ -12,9 +12,12 @@
             twitterInfo = values.join("&");
             //console.log(twitterInfo);
             $(".social-twitter").append('<a href="https://twitter.com/share?'+twitterInfo+'" class="icon-twitter"></a>');
-            $(".page").append($twitterLink);
+            $("body").append($twitterLink);
         }(window, document)); 
     </script>        
+</section>
+<section class="social-facebook-like">
+    <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
 </section>
 <script>
 (function($){
@@ -64,6 +67,3 @@
     });
 }(jQuery));
 </script>
-<section class="social-facebook-like">
-    <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
-</section>

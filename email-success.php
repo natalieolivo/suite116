@@ -6,7 +6,7 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'map/main.php';?>
+			<script type="text/javascript" src="js/email-success.js"></script>
 		</section>
 		<?php include 'scripts.php';?>		
 	</body>		

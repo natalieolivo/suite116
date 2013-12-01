@@ -14,7 +14,7 @@ $(document).ready(function(){
     }).done(function(data) {
       $.ajax({
         dataType: "html",
-        url: "js/templates/email-us.html",  
+        url: "js/templates/email-success.html",  
         success: function(html){
           var template = Handlebars.compile(html);                      
           $(".page").append(template(data));

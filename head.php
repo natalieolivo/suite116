@@ -9,8 +9,12 @@
 	<link href="css/reset.css" rel="stylesheet" />
 	<link href="css/s116.css" rel="stylesheet" />
 	<link href="css/rates.css" rel="stylesheet" />
+	<link href="css/map.css" rel="stylesheet" />
+	<link href="css/floorplan.css" rel="stylesheet" />
+	<link href="css/email-us.css" rel="stylesheet" />
 	<script src="js/third-party/jquery-1.9.1.js"></script>
 	<script src="js/third-party/handlebars.js"></script>
+	<script src="js/suite116.js" />
 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAWBTwOKMwPq8KSNGuuD5RAxQPF04sUbgOaXMIX5x5YADzBOODHhTiVBsmhD1gSAWlVFFGXpepbDPrdQ" type="text/javascript"></script>
 	<script type="text/javascript">

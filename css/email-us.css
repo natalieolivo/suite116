@@ -1,0 +1,14 @@
+#email-us {
+	padding: 60px 0 30px 10px;
+}
+
+#email-us * {
+	font-family: Justus Roman, Serif;
+}
+
+input.text {
+	font-size: 1em;
+	height: 2em;
+	min-width: 40%;
+	margin-bottom: 1em;
+}

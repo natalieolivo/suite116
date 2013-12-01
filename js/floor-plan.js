@@ -17,7 +17,7 @@ $(document).ready(function(){
         url: "js/templates/floor-plan.html",  
         success: function(html){        
           var template = Handlebars.compile(html);                      
-          $(".page").append(template(data));
+          $(".page").append(template(data));          
         }
       });    
     });    

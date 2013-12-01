@@ -16,8 +16,8 @@
   			// Set up the scene, camera, and renderer as global variables.
   			var scene, camera, renderer, controls;
 
-  			init();
-  			animate();
+  			//init();
+  			//animate();
 
   			function init() {
   				// create the scene and set the scene size

@@ -170,9 +170,9 @@ header {
 }
 .page figure figcaption.bottom-anchor {
 	position: fixed;
-	top: 70%;
+	top: 60%;
 	z-index: 999;
-	width: 60%;
+	width: 50%;
 }
 .page figure figcaption.block-text {
 	font-family: 'Justus Roman';				
@@ -260,15 +260,31 @@ section.page img {
 	nav ul.js-expanded li { margin: 1em .6em; }				
 	nav ul.js-expanded:before {
 		content: "+";
-	}												
+	}
+	.page figure.first img {
+		padding: 0;
+	}
 	section.page figure img {
 		display: none;
 	}
-	.page figure figcaption.top-anchor {
-		top: 40%;
-	}
+	.page figure figcaption.top-anchor.first {		
+		padding: 80px 0 10px 20px;
+		display: block;
+		position: static;
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+			transform: translate(0);
+		background: rgb(204,0,0);
+     }
+	 .page figure .top-anchor.first p {
+		 margin-bottom: .5em;
+	 }
+	.page figure figcaption.top-anchor {		
+		display: none;		
+     }
 	.page figure figcaption.block-text {								
-		font-size: 1.1em;
+		display: none;
+		
 	}
 	.page figure figcaption span.icon-arrow-right {
 		display: block;
@@ -280,6 +296,14 @@ section.page img {
 	/* utility classes */
 	.hide { display: none; }
 	.show { display: block; }
+
+	.page .suite-map {
+		padding: 1em;
+	}
+	.page #floor-plan {
+		padding: 80px 0;
+		margin-left: 1em;
+	}
 }
 
 .social-twitter {
@@ -300,26 +324,26 @@ input[type=submit] {
 	border: solid 1px #ddd;
 	background: rgb(204,0,0);
 	padding: 10px;
-	color: gold;
+	color: rgb(233, 213, 106);
 	font-size: 1em;
 }
 
 /** Form Errors **/
 input.error { 
-	-moz-box-shadow: 3px 3px 4px #e99e9e;
-	-webkit-box-shadow: 3px 3px 4px #e99e9e;
-	box-shadow: 3px 3px 4px #e99e9e;
+	-moz-box-shadow: 3px 3px 4px rgb(204,0,0);
+	-webkit-box-shadow: 3px 3px 4px rgb(204,0,0);
+	box-shadow: 3px 3px 4px rgb(204,0,0);
 	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#e99e9e')";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='rgb(204,0,0)')";
 	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#e99e9e');
-	border: solid 1px #e99e9e; 
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='rgb(204,0,0)');
+	border: solid 1px rgb(204,0,0); 
 }
 .js-error-box {
 	display: none; 
 	background: #fff; 
 	border: solid 1px rgb(204,0,0);
-	color: red; 
+	color: rgb(204,0,0); 
 	width: 50%; 
 	padding: 10px; 
 	margin: 10px 0;

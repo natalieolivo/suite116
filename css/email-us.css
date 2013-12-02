@@ -4,11 +4,17 @@
 	width: 60%;
 }
 
-#email-us span { font-size: .75em; }
+#email-us span { 
+	font-size: .75em; 	
+}
 #email-us .direct { margin-top: 1em; }
 
 #email-us * {
 	font-family: Justus Roman, Serif;
+}
+
+#email-us input[type=submit] {
+	margin: 1em 0;
 }
 
 input.text {

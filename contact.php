@@ -18,6 +18,10 @@ $Tel = Trim(stripslashes($_POST['Tel']));
 $Mobile = Trim(stripslashes($_POST['Mobile'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Comments = Trim(stripslashes($_POST['Comments']));
+$ReferredByYelp = $_POST['Yelp'];
+$ReferredBySE = $_POST['SearchEngine'];
+$ReferredByFriend = $_POST['Friend'];
+$ReferredByOther = $_POST['Other'];
 $Subscribed = $_POST['Subscriber']; 
 
 // validation
@@ -34,6 +38,10 @@ if (Trim($Tel)=="") {$validationOK=false; $invalidType=$invalidType.'Tel+';}
 //if (Trim($Mobile)=="") {$validationOK=false; $invalidType=$invalidType.'Mobile&';}
 if (Trim($Email)=="") {$validationOK=false; $invalidType=$invalidType.'Email+';}
 if (Trim($Comments)=="") {$validationOK=false; $invalidType=$invalidType.'Comments+';}
+if ($ReferredByYelp=="checked") { $ReferredByYelp="Referred By Yelp"; }
+if ($ReferredBySE=="checked") { $ReferredBySE="Referred By Search Engine"; }
+if ($ReferredByFriend=="checked") { $ReferredByFriend="Referred By Friend"; }
+if ($ReferredByOther=="checked") { $ReferredByOther="Referred By Other"; }
 if ($Subscribed=="checked") { $Subscribed="Currently Subscribed"; }
 if (!$validationOK) {
   print "<meta http-equiv=\"refresh\" content=\"0;URL=email-us.php?fname=$FirstName&lname=$LastName&addy=$Address&city=$City&state=$State&postCode=$PostCode&tel=$Tel&mobile=$Mobile&email=$Email&comments=$Comments&invalid=$invalidType\">"; 
@@ -71,6 +79,14 @@ $Body .= $Email;
 $Body .= "\n";
 $Body .= "Comments: ";
 $Body .= $Comments;
+$Body .= "\n";
+$Body .= $ReferredByYelp;
+$Body .= "\n";
+$Body .= $ReferredByOther;
+$Body .= "\n";
+$Body .= $ReferredBySE;
+$Body .= "\n";
+$Body .= $ReferredByFriend;
 $Body .= "\n";
 $Body .= $Subscribed;
 // send email 

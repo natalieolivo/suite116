@@ -9,4 +9,21 @@
 	<figure>
 		<img src="imgs/logo.png" class="logo" />
 	</figure>
+	<section class="social-twitter">    
+	    <script>
+	        (function(w, d){
+	            var urlEncoded = 'url='+encodeURIComponent(location.href).replace(/%20/g,'+'),
+	                viaEncoded = "via=suite116",
+	                textEncoded = "text=Suite 116 : Event Space : Harlem, NYC",
+	                values = [],
+	                $twitterLink = $(".social-twitter"),
+	                twitterInfo;
+	            values.push(urlEncoded, viaEncoded, textEncoded);                         
+	            twitterInfo = values.join("&");
+	            //console.log(twitterInfo);
+	            $(".social-twitter").append('<a href="https://twitter.com/share?'+twitterInfo+'" class="icon-twitter"></a>');
+	            $("nav").append($twitterLink);
+	        }(window, document)); 
+	    </script>        
+	</section>
 </nav>

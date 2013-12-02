@@ -16,9 +16,6 @@
         }(window, document)); 
     </script>        
 </section>
-<section class="social-facebook-like">
-    <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
-</section>
 <script>
 (function($){
     var w = $(".page").width(),
@@ -49,7 +46,7 @@
         top = startTop + ($(window).scrollTop());                
         $twitter[0].style.top = top + "px";
 
-        if($twitter.position().top >= (h - 500)) {            
+        if($twitter.position().top >= h) {            
             $twitter[0].style.top = $twitter[0].style.top;        
         }
                
@@ -67,3 +64,6 @@
     });
 }(jQuery));
 </script>
+<section class="social-facebook-like">
+    <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
+</section>

@@ -1,11 +1,16 @@
 <section><!-- Home Template -->
 	<figure class="first">
+		<figcaption class="banner top-anchor first">
+			<p>Have the Best Bash Ever, at Our Venue.</p>
+			<p>Book Your Special Event Today!</p>
+		</figcaption>	
 		<img src="imgs/suite-01.jpg" />
 		<figcaption class="banner top-anchor">
-			<p>Make it Memorable,</p>				
-			<p>Make it last, at our Harlem Suite</p>
+			<p>Have the Best Bash Ever, at Our Venue.</p>				
+			<p>Book Your Special Event Today!</p>
 		</figcaption>					
-		<figcaption class="block-text center-block bottom-anchor">A Harlem Event<span></span> Space with<span></span> Class &amp; Style ...						
+		<figcaption class="block-text center-block bottom-anchor">
+			Charming, and Spacious Areas						
 			<span class="icon-arrow-right"></span>
 		</figcaption>			
 	</figure>

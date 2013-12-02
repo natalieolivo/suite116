@@ -82,7 +82,7 @@ you can use the generic selector below, but it's slower:
 .icon-twitter:before {
 	content: "\e600";
 }
-
+a { color: rgb(204,0,0); }
 nav {
 	font-family: "Justus Bold"; 
 	font-variant:small-caps;								
@@ -132,9 +132,9 @@ header {
 	padding-top: 40px;
 }		
 .page figure figcaption.banner {
-	font-family: "Always Forever";
+	/*font-family: "Always Forever";*/
 	background: rgba(204,0,0, .70);				
-	font-size: 40px;				
+	font-size: 1.8em;				
 	width: 100%;				
 	color: #fff;
 	padding: 19px 0 19px 44px;
@@ -165,8 +165,14 @@ header {
 .page figure figcaption.top-anchor {
 	top: 21%;
 }
+.page figure figcaption.top-anchor.first {
+	display: none;
+}
 .page figure figcaption.bottom-anchor {
-	top: 64%;
+	position: fixed;
+	top: 70%;
+	z-index: 999;
+	width: 60%;
 }
 .page figure figcaption.block-text {
 	font-family: 'Justus Roman';				

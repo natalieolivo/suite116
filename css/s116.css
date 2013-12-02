@@ -219,11 +219,6 @@ section.page img {
 	.page figure figcaption.bottom-anchor {
 		top: 78%;
 	}
-	.icon-arrow-right {
-		display: block;
-		position: absolute;
-		right: 0;
-	}
 }
 
 @media (max-width: 768px) {
@@ -286,16 +281,17 @@ section.page img {
 		display: none;
 		
 	}
-	.page figure figcaption span.icon-arrow-right {
-		display: block;
-		position: absolute;
-		right: 10%;
-		bottom: 10%;
-		font-size: 3em;
-	}
 	/* utility classes */
 	.hide { display: none; }
 	.show { display: block; }
+
+	.social-twitter {
+		display: none;
+	}
+
+	.social-facebook-like {
+		display: none;		
+	}
 
 	.page .suite-map {
 		padding: 1em;

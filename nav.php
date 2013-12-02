@@ -1,6 +1,6 @@
 <nav>
 	<ul class="js-toggle-state">
-		<li class="hide"><a href="/suite116">Back Home</a></li>
+		<li class="hide"><a href="/">Back Home</a></li>
 		<li class="hide"><a href="rates.php">Rates</a></li>
 		<li class="hide"><a href="map.php">Map</a></li>						
 		<li class="hide"><a href="floor-plan.php">Floor Plan</a></li>

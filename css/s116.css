@@ -237,16 +237,16 @@ section.page img {
 @media (max-width: 532px) {
 	nav ul { cursor: pointer; }
 	nav ul:before { 
-		content: "-";
-		width: 1em;
-		height: 1.1em;
-		font-size: 2em;
+		content: "+menu";
+		width: 3.8em;
+		height: 2.2em;
+		font-size: 1em;
 		background: rgb(209, 17, 17);
-		display: block;
+		display: table-cell;
 		text-align: center;
 		vertical-align: middle;
-		font-family: "Georgia", serif;
-		font-weight: normal;					
+		font-family: "Justus Bold", serif;
+		font-weight: bold;					
 	}
 	nav ul.js-expanded {
 		background: black;
@@ -255,7 +255,9 @@ section.page img {
 	}
 	nav ul.js-expanded li { margin: 1em .6em; }				
 	nav ul.js-expanded:before {
-		content: "+";
+		content: "-hide";
+		background: black;
+		color: #fff;
 	}
 	.page figure.first img {
 		padding: 0;

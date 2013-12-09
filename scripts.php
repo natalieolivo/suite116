@@ -10,6 +10,7 @@
     
     // expand menu
     $(".js-toggle-state").on("click", function(){
+        console.log("toggling now");
         if($(this).find("li").eq(0).hasClass("show")) {
             $(this).find("li").removeClass("show").addClass("hide");
             $(this).removeClass("js-expanded");

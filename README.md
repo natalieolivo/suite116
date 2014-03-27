@@ -8,7 +8,7 @@ Pushing to Prod
 To push changes to prod the following has to be configured into git
 
 [remote "origin"]   
-  url = https://github.com/natalieolivo/suite116.git 
+  url = https://github.com/natalieolivo/suite116.git   
   fetch = +refs/heads/:refs/remotes/origin/ 
 
 [remote "prod"]  

@@ -6,8 +6,8 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'email-us/main.php';?>
-		</section>
+			<?php include 'email-us/main.php';?>			
+		</section>		
 		<?php include 'scripts.php';		
 		$FNAME = $_GET['fname'];
 		$LNAME = $_GET['lname'];

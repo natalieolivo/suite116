@@ -12,7 +12,9 @@
 	<link href="css/map.css" rel="stylesheet" />
 	<link href="css/floorplan.css" rel="stylesheet" />
 	<link href="css/email-us.css" rel="stylesheet" />
+	<link href="css/slider.css" rel="stylesheet" />
 	<script src="js/third-party/jquery-1.9.1.js"></script>
+	<script src="js/third-party/jquery.bxslider.min.js"></script>
 	<script src="js/third-party/handlebars.js"></script>
 	<script src="js/suite116.js"></script>
 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>

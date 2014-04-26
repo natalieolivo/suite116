@@ -84,28 +84,31 @@ you can use the generic selector below, but it's slower:
 }
 a { color: rgb(204,0,0); }
 nav {
-	font-family: "Justus Bold"; 
-	font-variant:small-caps;								
-	position: fixed;
+	font-family: "Justus Roman"; 
 	width: 100%;
-	height: 40px;
-	z-index: 1;
+	height: 70px;	
 	font-size: 18px;
 	letter-spacing: 1px;
-	background: #000;
-	background: -moz-linear-gradient(left,  rgba(15,15,15,1) 0%, rgba(15,15,15,1) 64%, rgba(108,108,108,1) 78%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(15,15,15,1)), color-stop(64%,rgba(15,15,15,1)), color-stop(78%,rgba(108,108,108,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to right,  rgba(15,15,15,1) 0%,rgba(15,15,15,1) 64%,rgba(108,108,108,1) 78%,rgba(255,255,255,0) 100%); /* W3C */
-
+	background: #000;	
 }
 nav ul { 
 	margin-left: 20px; 
 }
 nav li {
 	margin: 7px 2.4% 0 0;
+}
+nav li:first-of-type {
+	margin: 10px 99px 0 0;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+nav li:first-of-type a:hover {
+	text-shadow: none;
+}
+nav li:first-of-type span {
+	font-size: 36px;
+	color: gold;
 }
 nav li a {
 	text-decoration: none;
@@ -119,17 +122,15 @@ header {
 }
 .page header figure {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 70px;	
 	z-index: 999;
 }
 .page img { display: block; }			
 		
 .page figure {
 	position: relative;
-}
-.page figure.first img {
-	padding-top: 40px;
+	max-height: 181px;
+	overflow: hidden;
 }		
 .page figure figcaption.banner {
 	/*font-family: "Always Forever";*/
@@ -142,7 +143,7 @@ header {
 	box-sizing: border-box;
 }
 .page section {
-	padding: 0 50px;
+	/*padding: 0 50px;*/
 }
 
 /** table display centering **/
@@ -192,16 +193,64 @@ header {
 }
 section.page { 
 	width: 96%;	
-	background: #eee; 
+	background: #fff; 
 	max-width: 1000px;
 	margin: 0 auto;
-	position: relative;				
+	position: relative;
+	font-size: .85rem;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+section.page > ul {
+	margin: 20px 0 40px 190px;
+}
+section.page > h2 {
+	margin: 20px 0 0 190px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ddd;
+}
+section.page > ul li {
+	margin-top: 18px;
+}
+section.page > ul.more em {
+	margin-right: 0;
+}
+section.page > ul li em {
+	margin-right: 10px;
+	font-weight: bold;
+}
+section.page .dance-styles { 
+	display: block; 
+	margin-top: 4px;
+}
+
 section.page header figure {
-	width: 25%;
+	width: 17%;
 }
 section.page img {
 	max-width: 100%;
+}
+
+.packages li {
+	width: 30%;
+	margin: 0 .94rem 0;
+	text-align: center;
+}
+.packages p {
+	padding: 16px 0;
+}
+.packages li span {
+	font-family: 'Justus Roman', 'Georgia';
+	font-size: 1.4rem;
+	font-weight: 600; 	
+}
+
+footer {
+	background: #000;
+	height: 50px;	
+}
+footer li {
+	color: #fff;
 }
 
 /* MIDWAY BREAKPOINTS */

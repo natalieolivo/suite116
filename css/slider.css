@@ -1,0 +1,59 @@
+/*
+	BXSLIDER : CUSTOM STYLES
+*/
+.bx-wrapper {
+	position: relative;
+}
+
+.bx-controls-direction a {
+	position: absolute;	
+	display: block;
+	top: 14rem;
+	width: 100px;
+	z-index: 100;
+	color: transparent;
+	opacity: 0;
+}
+.bx-controls-direction a:hover {
+	opacity: 1;
+}
+.bx-controls-direction .bx-prev { left: 0; }
+.bx-controls-direction .bx-prev:before { content: '\003C'; }
+.bx-controls-direction .bx-next { right: 0; }
+.bx-controls-direction .bx-next:before { 
+	content: '\003E'; 
+}
+.bx-controls-direction .bx-prev:before,
+.bx-controls-direction .bx-next:before {
+	font-size: 10rem;
+	color: #eeeeee;
+	font-family: Justus Bold;
+	margin-left: 0;	
+	text-shadow: 2px 4px 6px #000;	
+}
+
+.bx-controls-auto { display: none; }
+.bx-pager {
+	width: 8rem;
+	position: relative;
+	z-index: 999;
+	top: -2rem;
+	margin-left: 2rem;
+}
+.bx-pager-item {
+	display: inline-block;
+	margin: 0 4px;
+	width: 1rem;
+}
+.bx-pager-item a {
+	color: #fff;
+	border: none;
+	border-radius: 2rem;
+	background: rgba(255,255,255,.65);	
+	display: block;
+	text-indent: -9999px;
+
+}
+.bx-pager-item a.active {			
+	background: rgba(204,0,0,1);	
+}

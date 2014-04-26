@@ -1,0 +1,65 @@
+{
+  "services":[{
+  		"title":"Choreography for Private Groups",
+  		"descr":"From Ballroom to Belly Dance we cover it all! Whether you are in need of an intimate space to hold rehearsals for your big day (includes weddings, bridal, bachelorette, and birthday parties) or you would like to get your friends together for some private dance lessons, Suite 116 is the perfect location to create your memorable experience!<br><br>Our instructors teach at studios such as Alvin Ailey and Broadway Dance Center and have performed internationally at dance workshops and commemorative events."
+  	},
+  	{
+  		"title":"Rites of Passage Packages",
+  		"descr":"Quinceañera, Sweet Sixteen, Sexy Sixteen (for the boys) Bridal Showers, Bachelorette Parties."
+  	},
+  	{
+  		"title":"Hired Dancers for Performances",
+  		"descr":"Ideal For Weddings, Bachelorette Parties, Baby Showers, Corporate and Cultural Affairs. Off or onsite."
+  	},
+  	{
+  		"title":"Extended Services",
+  		"descr":"Our extended services include DJs and MCs, micro websites for your events, photography, and videography. This includes a password protected area for you and your guests - complete with online guest book and photo gallery. <br><br>***Girl's Night Out parties available with private group Pole Dancing lessons***"
+  	}],
+  "choreography":[{
+  		"title":"",
+  		"descr":"Cortes Entertainment has mastered the art of taking the complicated and breaking it down for those who have never danced before. No one but you and your choreographer will need to know that you have only been practicing for a few weeks. Your guests will think you have been dancing for years!"
+  	},
+  	{
+  		"title":"Ballroom Styles: ",
+  		"descr":"(Appropriate for Sweet 16's, Quince's, and Weddings)",
+  		"styles": [{"name":"Bachata"}, {"name":"Merengue"}, {"name":"Reggaeton"}, {"name":"Waltz"},{"name":"Cha Cha"}, {"name":"Hip-Hop"}, {"name":"Samba"}, {"name":"Salsa"}, {"name":"Rumba"}, {"name":"Belly Dance"}, {"name":"Latin Jazz"}, {"name":"Rhumba"}, {"name":"Tango"}]
+  	}],
+  "specialPackagesTitle":"Quinceañera &amp; Sweet Sixteen Packages",
+  "specialPackages":[{
+  		"title":"THE PRINCESS",
+  		"descr":"Package Includes: 5 Sessions, 2 hours each plus a Bonus Session at the location of your event. A choice of two Level 1 dances. Complimentary Entrance."
+  	},
+  	{
+  		"title":"THE QUEEN BEE",
+  		"descr":"Package Includes: 7 Sessions, 2 hours each plus a Bonus Session at the location of your event. A choice of one Level 1 dance and one Level 2 dance. Complimentary Entrance."
+  	},
+  	{
+  		"title":"REINA SUPREME",
+  		"descr":"Package Includes: 10 sessions, 2 hours each plus a Bonus Session at the location of your event. A choice of two Level 1 dances, one Level 2 dance OR 2 Level dances."
+  	},
+  	{
+  		"title":"DIVA DELUXE",
+  		"descr":"Package Includes: 15 sessions, 2 hours each plus a Bonus Session at the location of your event. 3 dances of any kind for your event OR 2 dances of your choice PLUS a solo choreographed for the birthday girl."
+  	},
+  	{
+  		"title":"FOR THE BOYS! THE SEXY SIXTEEN",
+  		"descr":"Why do girls get to have all the fun? Cortes Entertainment introduces a way to make your coming of age celebration just as exciting and special as your female counterparts. Package Options: One choreographed dance for you and your guy friends OR a performance by Cortes Entertainment dancers. Can we suggest a belly dancer (or two) at your party? Please contact us for pricing details*"
+  	}],
+  	"privateInstructionTitle":"Private Instruction (suggested dance styles)",
+  	"privateInstruction":[{
+  		"title":"Salsa",
+  		"descr":"There are many different styles to this intricate yet exciting dance form. Its origins lie in Latin America more specifically Cuba and Puerto Rico. Salsa is danced in many ways On 1, On 2, even on 3. The numbers simply explain what count the dancers \"break\" on. The type of Salsa that is widely taught in New York is Salsa on 2 also known as Mambo Salsa.<br><br>Please specify which style of Salsa you prefer for your event. If you are unsure, your choreographer can help you make that determination."
+  	},
+    {
+      "title":"Belly Dance",
+      "descr":"The origin of this ancient art form is as mystical as the dance itself. It is believed by many that this art form started as an ancient ritual dance for fertility and childbirth. Many countries in North Africa, the Middle East, and the Mediterranean have their own interpretation of the dance: Egypt, Greece, Turkey, Morocco, Tunisia, and Lebanon, just to name a few. Egyptian and Turkish are the more popular styles in the United States. Cortes Entertainment has a library of music to choose from and we can tailor the style of dance to fit your musical selection."  
+      },
+      {
+        "title":"Hip Hop",
+        "descr":"Hip hop encompasses old school and new school movements that derive from disco, house, poppin' and lockin', break dancing as well as freestyle movements that keep audience members intrigued and always guessing. Hip hop is urban, it is \"street\", it is diverse and forever changing."
+      },
+      {
+        "title":"Zumba",
+        "descr":"The biggest workout craze to date has people of all ages enjoying fitness and dance! A unique blend of Latin rhythms and world beats, Zumba parties are the perfect alternative to the typical bachelorette party!"
+      }]
+}

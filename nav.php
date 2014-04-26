@@ -1,13 +1,16 @@
 <nav>
 	<ul class="js-toggle-state">
-		<li class="hide"><a href="/">Back Home</a></li>
-		<li class="hide"><a href="rates.php">Rates</a></li>
-		<li class="hide"><a href="map.php">Map</a></li>						
-		<li class="hide"><a href="floor-plan.php">Floor Plan</a></li>
-		<li class="hide"><a href="email-us.php">Email Us</a></li>
+		<li><a href='/'>Suite<span>116</span></a></li>
+		<li class="hide"><a href="/"></a></li>
+		<li class="hide"><a href="rates.php"></a></li>
+		<!-- <li class="hide"><a href="map.php">Map</a></li>						 -->
+		<li class="hide"><a href="floor-plan.php"></a></li>
+		<li class="hide"><a href="email-us.php"></a></li>
 	</ul>
 	<figure>
-		<img src="imgs/logo.png" class="logo" />
+		<a href='/'>
+			<img src="imgs/logo.png" class="logo" />
+		</a>
 	</figure>
 	<section class="social-twitter">    
 	    <script>

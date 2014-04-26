@@ -1,0 +1,58 @@
+{
+	"packages":[{
+		"title":"Package 1",
+		"descr":"When a couple decides to have a wedding there is typically a wedding rehearsal and dinner the night before the event. During this time the coordinator or chosen person will instruct the couple and their bridal party on how to walk down aisle, seat guests, and what to expect at their reception.",
+		"proposals":[{
+			"entry":"1 hour rehearsal with wedding planner, 1 hour dinner"
+		}],
+		"price": {
+			"rehearsal":"150.00",
+			"rehearsalTax":"13.31",
+			"dinner":"85.00"			
+		},	
+		"disclaimer":"Client can request additional hours. Clean up price has not been included. If the clients wishes to conduct their own rehearsal without Chic Design's wedding planner they should be charged the normal rate. I recommend doing rehearsals Monday through Thursday."
+		},
+		{
+		"title":"Package 2",
+		"descr":"For The Wedding Package Chic Design will coordinate the client's ceremony and reception or reception only if they choose to hold it at Suite 116.",
+		"proposals":[{
+			"entry":"Two consultations with client at Suite 116. Initial /Final"
+			},
+			{
+			"entry":"Rehearsal 1 hour with wedding planner and 1 hour dinner at Suite 116."
+			},
+			{
+			"entry":"Day of coordination"
+			},
+			{
+			"entry":"Confirm vendor arrangements"
+			},
+			{
+			"entry":"Disc Jockey or live band 4 or 5 hours depending on event time."
+			},
+			{
+			"entry":"Hair and make-up (Bride only) we will need to set the room in the back as a bridal suite."
+			},
+			{
+			"entry":"Photographer 5hr coverage."
+			},
+			{
+			"entry":"Exclusive caterer and pastry chef if available. Pricing varies depending on client's selection and number of people. Menus will be provided."
+		}],
+		"price":{
+			"rehearsal":"85.00",
+			"rehearsalTax":"13.31",
+			"dinner":"85.00",
+			"package":"2970.00",
+			"band":"554.00"
+		}
+	},
+	{
+		"title":"Package 3",
+		"descr":"Social events – cocktail parties, engagement parties, surprise parties/engagements. <br> Same as Wedding Package. <br> However, client is not required to use hair and make up artist or photographer. If client wants such services they will have to use my vendors. I want a cohesive event and a reputation for providing excellent service. Using outside vendors can be tricky.",
+		"proposals":[],
+		"price":{			
+			"package":"2970.00"			
+		}
+	}]
+}

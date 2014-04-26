@@ -1,0 +1,30 @@
+<h2>Packages &amp; Instruction</h2>
+<ul class="services">
+	{{#each services}}
+		<li><em>{{title}}:</em>{{{descr}}}</li>
+	{{/each}}
+</ul>
+<h2>More Choregraphic Services</h2>
+<ul class="more">
+	{{#each choreography}}
+		<li><em>{{title}}</em>{{{descr}}}</li>
+		{{#if styles}}
+			{{#each styles}}
+				<li class="dance-styles">{{name}}</li>
+			{{/each}}	
+		{{/if}}
+	{{/each}}	
+</ul>
+<h2>{{{specialPackagesTitle}}}</h2>
+<ul class="special">
+	{{#each specialPackages}}
+		<li><em>{{title}}:</em>{{{descr}}}</li>
+	{{/each}}
+</ul>
+<h2>{{privateInstructionTitle}}</h2>
+<ul class="private">	
+	{{#each privateInstruction}}
+		<li><em>{{title}}:</em>{{{descr}}}</li>
+	{{/each}}
+</ul>
+<p>****Ask About Private Striptease and/or Pole Dancing Lessons***</p>

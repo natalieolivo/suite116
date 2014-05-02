@@ -6,7 +6,7 @@
 
 // get posted data into local variables
 //$EmailFrom = Trim(stripslashes($_POST['EmailFrom'])); 
-$EmailTo = "suiteat116@gmail.com";
+$EmailTo = Trim(stripslashes($_POST['mailTo']));
 $FirstName = Trim(stripslashes($_POST['FirstName'])); 
 $LastName = Trim(stripslashes($_POST['LastName'])); 
 $Subject = "RE: $FirstName's Interest in Suite 116 Event Rental";
@@ -14,7 +14,7 @@ $Address = Trim(stripslashes($_POST['Address']));
 $City = Trim(stripslashes($_POST['City'])); 
 $State = Trim(stripslashes($_POST['State'])); 
 $PostCode = Trim(stripslashes($_POST['PostCode'])); 
-$Tel = Trim(stripslashes($_POST['Tel'])); 
+$Tel = Trim(stripslashes($_POST['Tel']));
 $Mobile = Trim(stripslashes($_POST['Mobile'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Comments = Trim(stripslashes($_POST['Comments']));
@@ -22,31 +22,46 @@ $ReferredByYelp = $_POST['Yelp'];
 $ReferredBySE = $_POST['SearchEngine'];
 $ReferredByFriend = $_POST['Friend'];
 $ReferredByOther = $_POST['Other'];
-$Subscribed = $_POST['Subscriber']; 
+$Subscribed = $_POST['Subscriber'];
+$Mode = $_POST['Mode'];
 
 // validation
 $validationOK=true;
 $invalidType='';
-//if (Trim($EmailFrom)=="") $validationOK=false;
-if (Trim($FirstName)=="") {$validationOK=false; $invalidType=$invalidType.'FirstName+';}
-if (Trim($LastName)=="") {$validationOK=false; $invalidType=$invalidType.'LastName+';} 
-if (Trim($Address)=="") {$validationOK=false; $invalidType=$invalidType.'Address+';}
-if (Trim($City)=="") {$validationOK=false; $invalidType=$invalidType.'City+';}
-if (Trim($State)=="") {$validationOK=false; $invalidType=$invalidType.'State+';}
-if (Trim($PostCode)=="") {$validationOK=false; $invalidType=$invalidType.'PostCode+';}
-if (Trim($Tel)=="") {$validationOK=false; $invalidType=$invalidType.'Tel+';}
+
+if ($Mode!="wedding" && $Mode!="kids" && $Mode!="dance") {
+	//if (Trim($EmailFrom)=="") $validationOK=false;
+	if (Trim($FirstName)=="") {$validationOK=false; $invalidType=$invalidType.'FirstName+';}
+	if (Trim($LastName)=="") {$validationOK=false; $invalidType=$invalidType.'LastName+';} 
+	if (Trim($Address)=="") {$validationOK=false; $invalidType=$invalidType.'Address+';}
+	if (Trim($City)=="") {$validationOK=false; $invalidType=$invalidType.'City+';}
+	if (Trim($State)=="") {$validationOK=false; $invalidType=$invalidType.'State+';}
+	if (Trim($PostCode)=="") {$validationOK=false; $invalidType=$invalidType.'PostCode+';}
+	if (Trim($Tel)=="") {$validationOK=false; $invalidType=$invalidType.'Tel+';}
 //if (Trim($Mobile)=="") {$validationOK=false; $invalidType=$invalidType.'Mobile&';}
-if (Trim($Email)=="") {$validationOK=false; $invalidType=$invalidType.'Email+';}
-if (Trim($Comments)=="") {$validationOK=false; $invalidType=$invalidType.'Comments+';}
-if ($ReferredByYelp=="checked") { $ReferredByYelp="Referred By Yelp"; }
-if ($ReferredBySE=="checked") { $ReferredBySE="Referred By Search Engine"; }
-if ($ReferredByFriend=="checked") { $ReferredByFriend="Referred By Friend"; }
-if ($ReferredByOther=="checked") { $ReferredByOther="Referred By Other"; }
-if ($Subscribed=="checked") { $Subscribed="Currently Subscribed"; }
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=email-us.php?fname=$FirstName&lname=$LastName&addy=$Address&city=$City&state=$State&postCode=$PostCode&tel=$Tel&mobile=$Mobile&email=$Email&comments=$Comments&invalid=$invalidType\">"; 
-  exit;
+	if (Trim($Email)=="") {$validationOK=false; $invalidType=$invalidType.'Email+';}
+	if (Trim($Comments)=="") {$validationOK=false; $invalidType=$invalidType.'Comments+';}
+	if ($ReferredByYelp=="checked") { $ReferredByYelp="Referred By Yelp"; }
+	if ($ReferredBySE=="checked") { $ReferredBySE="Referred By Search Engine"; }
+	if ($ReferredByFriend=="checked") { $ReferredByFriend="Referred By Friend"; }
+	if ($ReferredByOther=="checked") { $ReferredByOther="Referred By Other"; }
+	if ($Subscribed=="checked") { $Subscribed="Currently Subscribed"; }
+	if (!$validationOK) {
+  		print "<meta http-equiv=\"refresh\" content=\"0;URL=email-us.php?fname=$FirstName&lname=$LastName&addy=$Address&city=$City&state=$State&postCode=$PostCode&tel=$Tel&mobile=$Mobile&email=$Email&comments=$Comments&invalid=$invalidType\">"; 
+  		exit;
+	}
+} else {
+ 	if (Trim($Tel)=="") {$validationOK=false; $invalidType=$invalidType.'Tel+';}
+	if (Trim($Email)=="") {$validationOK=false; $invalidType=$invalidType.'Email+';}
+	if (Trim($Comments)=="") {$validationOK=false; $invalidType=$invalidType.'Comments+';}
+	
+	if (!$validationOK) {
+		print "<meta http-equiv=\"refresh\" content=\"0;URL=$Mode.php?fname=$FirstName&lname=$LastName&addy=$Address&city=$City&state=$State&postCode=$PostCode&tel=$Tel&mobile=$Mobile&email=$Email&comments=$Comments&invalid=$invalidType\">";
+		exit;
+	}
+  		
 }
+
 
 // prepare email body text
 $Body = "";

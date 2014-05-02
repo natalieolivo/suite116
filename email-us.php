@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<?php include 'head.php'; ?>
-	<body>							
+	<body>
 		<section class="page">
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
 			<?php include 'email-us/main.php';?>			
-		</section>		
+		</section>
 		<?php include 'scripts.php';		
 		$FNAME = $_GET['fname'];
 		$LNAME = $_GET['lname'];

@@ -38,7 +38,7 @@
 			<p>Bacon ipsum dolor sit amet prosciutto strip steak beef ribs, ham hock t-bone ribeye sausage ball tip shank biltong flank tri-tip. Capicola ball tip shoulder filet mignon pancetta sausage tri-tip jowl rump tongue. Kielbasa pancetta capicola, tenderloin pork loin strip steak ham tri-tip biltong pastrami boudin pork belly turkey. Turkey beef ribs...</p>
 		</li>
 		<li>
-			<span>Kids Packages</span>
+			<a href="kids.php"><span>Family Packages</span></a>
 			<figure>
 				<img src="imgs/DSCN0015.jpg" />
 			</figure>

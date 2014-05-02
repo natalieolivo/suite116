@@ -18,7 +18,9 @@ $(document).ready(function(){
         success: function(html){
           console.log("SUCCESS:: Ready to compile template:", html);
           var template = Handlebars.compile(html);                      
-          $(".page").append(template(data));          
+          $(".page").append(template(data));
+          S116.Form.setValidationFields();
+          S116.Form.checkForErrors();             
         }
       });    
     });    

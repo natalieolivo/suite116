@@ -9,15 +9,18 @@ $(document).ready(function(){
       url      : "js/data/kids.json",  
       success  : success,    
       error   : function(a, b, errorThrown) {
-        //console.log(errorThrown);
+        console.log(errorThrown);
       }
     }).done(function(data) {
       $.ajax({
         dataType: "html",
         url: "js/templates/kids.html",  
-        success: function(html){        
+        success: function(html){
+          console.log("SUCCESS:: Ready to compile template:", html);       
           var template = Handlebars.compile(html);                      
-          $(".page").append(template(data));          
+          $(".page").append(template(data));
+          S116.Form.setValidationFields();
+          S116.Form.checkForErrors();          
         }
       });    
     });    

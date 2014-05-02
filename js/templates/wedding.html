@@ -1,6 +1,36 @@
-<h2>Packages</h2>
-<ul>
-	{{#each packages}}
-		<li><em>{{title}}:</em>{{{descr}}}</li>
-	{{/each}}
-</ul>
+
+<section class="body">
+	<h2>Wedding Packages</h2>
+
+	<ul class="wedding-package-list">
+		{{#each packages}}
+			<li>
+				<em>{{title}}:</em>{{{descr}}}
+				<em>Proposal:</em>
+				{{#each proposals}}
+					<div>{{entry}}</div>
+				{{/each}}
+								
+				<em>Hrly Rehearsal Price: ${{../price.rehearsal}} </em>
+				<em>Tax: ${{../price.rehearsalTax}}</em>
+				<em>Total for the hour: $163.31</em>				
+				<em>Hrly Dinner Price: ${{../price.dinner}}</em>				
+			</li>
+		{{/each}}
+	</ul>
+
+	<div id="email-wedding">
+		<h2>Contact a Wedding Planner</h2>
+		<div class="js-error-box">Uh, Oh. Looks like you missed a few fields! Can you fill those in? Thanks!</div>
+		<form method="POST" action="contact.php"> Fields marked (*) are required		
+			<input type="hidden" name="mailTo" value="nolivo1@gmail.com" />
+			<input type="hidden" name="Mode" value="wedding" />
+			<p>Email:* <br /> <input class="text email" name="Email" type="text" /></p>
+			<p>Tel:* <br /> <input class="text tel" name="Tel" type="text" /></p>
+			<p>Comments: <br /> <textarea class="comments" name="Comments"></textarea></p>	
+			<p><input name="submit" value="Submit" type="submit" /></p>		
+		</form>
+	</div>
+</section>
+
+

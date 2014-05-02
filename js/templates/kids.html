@@ -1,0 +1,126 @@
+
+<section class="body">
+<h2>Family Packages</h2>
+	<table>
+		<thead>
+		<tr>
+			{{#each packageTypes}}
+				<th colspan="3">{{this}}</th>
+			{{/each}}
+		</tr>
+		</thead>
+		<tr>
+			{{#each packages}}
+				<td>{{title}}</td>				
+			{{/each}}
+		</tr>	
+		<tr >
+			{{#each packages}}
+				<td>{{capacity}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}		
+				<td>{{daysRange}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}		
+				<td>{{inviteType}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{item1Deal}}}</td>			
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{item2Deal}}}</td>			
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{spaceDeal}}}</td>			
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{staffDeal}}}</td>			
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{giftDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{supplyDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{takeAwayDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{foodDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{treatDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{balloonDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{photoDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{centerpieceDeal}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{maxNumberGuests}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>${{{price}}}</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>{{{pricePerChild}}} per addt'l child</td>
+			{{/each}}
+		</tr>
+		<tr>
+			{{#each packages}}			
+				<td>${{{deposit}}}</td>
+			{{/each}}
+		</tr>			
+	</table>
+
+	<div id="email-kids">
+		<h2>Contact a Birthday / Shower Planner</h2>
+		<div class="js-error-box">Uh, Oh. Looks like you missed a few fields! Can you fill those in? Thanks!</div>
+		<form method="POST" action="contact.php"> Fields marked (*) are required		
+			<input type="hidden" name="mailTo" value="nolivo1@gmail.com" />
+			<input type="hidden" name="Mode" value="kids" />
+			<p>Email:* <br /> <input class="text email" name="Email" type="text" /></p>
+			<p>Tel:* <br /> <input class="text tel" name="Tel" type="text" /></p>
+			<p>Comments: <br /> <textarea class="comments" name="Comments"></textarea></p>	
+			<p><input name="submit" value="Submit" type="submit" /></p>		
+		</form>
+	</div>
+</section>

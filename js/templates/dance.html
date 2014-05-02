@@ -1,30 +1,45 @@
-<h2>Packages &amp; Instruction</h2>
-<ul class="services">
-	{{#each services}}
-		<li><em>{{title}}:</em>{{{descr}}}</li>
-	{{/each}}
-</ul>
-<h2>More Choregraphic Services</h2>
-<ul class="more">
-	{{#each choreography}}
-		<li><em>{{title}}</em>{{{descr}}}</li>
-		{{#if styles}}
-			{{#each styles}}
-				<li class="dance-styles">{{name}}</li>
-			{{/each}}	
-		{{/if}}
-	{{/each}}	
-</ul>
-<h2>{{{specialPackagesTitle}}}</h2>
-<ul class="special">
-	{{#each specialPackages}}
-		<li><em>{{title}}:</em>{{{descr}}}</li>
-	{{/each}}
-</ul>
-<h2>{{privateInstructionTitle}}</h2>
-<ul class="private">	
-	{{#each privateInstruction}}
-		<li><em>{{title}}:</em>{{{descr}}}</li>
-	{{/each}}
-</ul>
-<p>****Ask About Private Striptease and/or Pole Dancing Lessons***</p>
+<section class="body">
+	<h2>Dance Packages &amp; Instruction</h2>
+	<ul class="services">
+		{{#each services}}
+			<li><em>{{title}}:</em>{{{descr}}}</li>
+		{{/each}}
+	</ul>
+	<h2>More Choregraphic Services</h2>
+	<ul class="more">
+		{{#each choreography}}
+			<li><em>{{title}}</em>{{{descr}}}</li>
+			{{#if styles}}
+				{{#each styles}}
+					<li class="dance-styles">{{name}}</li>
+				{{/each}}	
+			{{/if}}
+		{{/each}}	
+	</ul>
+	<h2>{{{specialPackagesTitle}}}</h2>
+	<ul class="special">
+		{{#each specialPackages}}
+			<li><em>{{title}}:</em>{{{descr}}}</li>
+		{{/each}}
+	</ul>
+	<h2>{{privateInstructionTitle}}</h2>
+	<ul class="private">	
+		{{#each privateInstruction}}
+			<li><em>{{title}}:</em>{{{descr}}}</li>
+		{{/each}}
+	</ul>
+	<p>****Ask About Private Striptease and/or Pole Dancing Lessons***</p>
+
+	<div id="email-dance">
+		<h2>Contact a Dance Instructor</h2>
+		<div class="js-error-box">Uh, Oh. Looks like you missed a few fields! Can you fill those in? Thanks!</div>
+		<form method="POST" action="contact.php"> Fields marked (*) are required		
+			<input type="hidden" name="mailTo" value="nolivo1@gmail.com" />
+			<input type="hidden" name="Mode" value="dance" />
+			<p>Email:* <br /> <input class="text email" name="Email" type="text" /></p>
+			<p>Tel:* <br /> <input class="text tel" name="Tel" type="text" /></p>
+			<p>Comments: <br /> <textarea class="comments" name="Comments"></textarea></p>	
+			<p><input name="submit" value="Submit" type="submit" /></p>		
+		</form>
+	</div>
+</section>

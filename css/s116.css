@@ -66,7 +66,10 @@ you can use the generic selector below, but it's slower:
 .icon-arrow-right:before {
 	content: "\e000";
 }
-.icon-twitter {
+.icon-twitter, 
+.icon-facebook, 
+.icon-pinterest,
+.icon-mail {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -74,63 +77,102 @@ you can use the generic selector below, but it's slower:
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	-webkit-font-smoothing: antialiased;	
-	color: rgba(204,0,0, .70);
+	-webkit-font-smoothing: antialiased;		
+	color: rgba(255,255,255, 100);	
 	text-decoration: none;
-	font-size: 2em;
+	font-size: 1.6em;
+	-webkit-transition: color .5s ease-out;
+  	-moz-transition: color .5s ease-out;
+  	-o-transition: color .5s ease-out;
+  	transition: color .5s ease-out;
+}
+.icon-twitter:hover {
+	color: rgba(0,172,238, .70);
+}
+.icon-facebook:hover {
+	color: rgba(0,172,238, .70);
+}
+.icon-pinterest:hover {
+	color: rgba(200,35,44, .70);
+}
+.icon-mail:hover {
+	color: rgba(216, 193, 124, .70);
 }
 .icon-twitter:before {
 	content: "\e600";
 }
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-pinterest:before {
+	content: "\e602";
+}
+.icon-mail:before {
+	content:"\e603";
+}
+
+
 a { color: rgb(204,0,0); }
 nav {
-	font-family: "Justus Roman"; 
-	width: 100%;
-	height: 70px;	
-	font-size: 18px;
-	letter-spacing: 1px;
-	background: #000;	
+	font-family: "Justus Roman";
+width: 100%;
+height: 70px;
+font-size: 1rem;
+letter-spacing: 1px;
+background: #2B2B2B;	
 }
 nav ul { 
 	margin-left: 20px; 
 }
 nav li {
 	margin: 7px 2.4% 0 0;
-}
-nav li:first-of-type {
-	margin: 10px 99px 0 0;
 	color: #fff;
-	font-size: 24px;
+}
+nav .logo {	
+	margin: 0 330px 0 24px;
+	color: red;
+	font-size: 16px;
 	text-transform: uppercase;
+	padding-top: 10px;
+	letter-spacing: 6px;
 }
-nav li:first-of-type a:hover {
-	text-shadow: none;
+nav .logo a {
+	text-decoration: none;
+	color: #fff; 
 }
-nav li:first-of-type span {
-	font-size: 36px;
-	color: gold;
+nav .logo span {
+	font-size: 30px;
+	color: rgb(216, 193, 124);
+	letter-spacing: -1px;
 }
 nav li a {
 	text-decoration: none;
 	color: #fff; 
 }
-nav li a:hover {
-	text-shadow: 1px 1px 4px #fff;
+.social { 
+	float: right; 
+	width: 170px;
+}
+.address {
+	float: right;
+	color: #fff;
+	padding: 0 10px 0 0;
+	font-size: .7rem;
 }
 header {
 	position: relative;
 }
 .page header figure {
 	position: absolute;
-	top: 70px;	
+	top: 31px;
 	z-index: 999;
+	left: -17px;
 }
 .page img { display: block; }			
 		
 .page figure {
 	position: relative;
-	max-height: 181px;
-	overflow: hidden;
+	max-height: 181px;	
 }		
 .page figure figcaption.banner {
 	/*font-family: "Always Forever";*/
@@ -194,30 +236,37 @@ header {
 section.page { 
 	width: 96%;	
 	background: #fff; 
-	max-width: 1000px;
+	max-width: 1000px;	
 	margin: 0 auto;
 	position: relative;
 	font-size: .85rem;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
-section.page > ul {
-	margin: 20px 0 40px 190px;
+section.page .body {
+	padding-left:200px;
 }
-section.page > h2 {
-	margin: 20px 0 0 190px;
+section.page > ul {
+	margin: 0px 0 40px 190px;
+}
+section.page h2 {
+	font-family: "Justus Roman", "Arial";
+	margin: 20px 0 20px 0;
 	padding-bottom: 10px;
 	border-bottom: solid 1px #ddd;
 }
-section.page > ul li {
+section.page .body ul li {
 	margin-top: 18px;
 }
-section.page > ul.more em {
+section.page ul.more em {
 	margin-right: 0;
 }
-section.page > ul li em {
-	margin-right: 10px;
+section.page ul li em {
+	margin: 10px 10px 10px 0;
 	font-weight: bold;
+	font-style: normal;
+	font-family: "Justus Roman", "Arial";
+	display: block;
+	font-size: 16px;
 }
 section.page .dance-styles { 
 	display: block; 
@@ -234,7 +283,10 @@ section.page img {
 .packages li {
 	width: 30%;
 	margin: 0 .94rem 0;
-	text-align: center;
+	text-align: center;	
+}
+.packages li figure {
+	overflow: hidden;
 }
 .packages p {
 	padding: 16px 0;
@@ -279,24 +331,19 @@ footer li {
 	section.page header figure img,
 	section.page figure.first img {
 		display: block;
+	}
+	.packages li { 
+		display: block; 
+		width: 100%;
+	}
+	section.page .body {
+		padding: 0;
 	}				
 }
 
 /** SMALL RES BREAKPOINTS **/
 @media (max-width: 532px) {
-	nav ul { cursor: pointer; }
-	nav ul:before { 
-		content: "+menu";
-		width: 3.8em;
-		height: 2.2em;
-		font-size: 1em;
-		background: rgb(209, 17, 17);
-		display: table-cell;
-		text-align: center;
-		vertical-align: middle;
-		font-family: "Justus Bold", serif;
-		font-weight: bold;					
-	}
+	nav ul { cursor: pointer; }	
 	nav ul.js-expanded {
 		background: black;
 		width: 10em;
@@ -351,17 +398,11 @@ footer li {
 	.page #floor-plan {
 		padding: 80px 0;
 		margin-left: 1em;
-	}
+	}	
 }
 
-.social-twitter {
-	background: rgb(233, 213, 106);
-	position: absolute;
-	top: 640%;
-	right: 0px;
-	padding: 6px !important;
-	/*-webkit-box-shadow: 0px 3px 6px 0px #242324;
-          box-shadow: 0px 3px 6px 0px #242324;*/
+.social-twitter {	
+	padding: 6px !important;	
 }
 .social-facebook-like {
 	margin: 0 auto;
@@ -374,7 +415,7 @@ input[type=submit] {
 	border: solid 1px #ddd;
 	background: rgb(204,0,0);
 	padding: 10px;
-	color: rgb(233, 213, 106);
+	color: #fff;
 	font-size: 1em;
 }
 
@@ -403,4 +444,33 @@ input.error {
 	height: 420px; 
 	font-size: 1.4em; 
 	color: rgb(204,0,0); 
+}
+/**
+	WEDDING PACKAGES
+**/
+.wedding-package-list li div { margin-top: 10px; }
+
+/**
+	TABLE LAYOUT
+**/
+table {
+	display: table;
+	border-collapse: collapse;	
+	text-align: center;
+}
+table thead th { 
+	font-family: Justus Roman; 
+	font-size: 16px;
+	padding: 10px 0;
+}
+table tr { width: 100%; }
+table td {	
+	width: 200px;
+	padding: 8px;	
+}
+table td:nth-child(n-4) {
+	background: rgb(243, 243, 243);
+}
+table td:nth-child(n+4) {
+	background: rgb(228, 205, 79);
 }

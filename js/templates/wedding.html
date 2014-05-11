@@ -2,6 +2,11 @@
 <section class="body">
 	<h2>Wedding Packages</h2>
 
+	<ul class="bxslider">
+		<li><img src="imgs/wedding1.jpg" /></li>	
+		<li><img src="imgs/043c27_8c1b5778a52441968d68010e3d1ba9b7.jpg" /></li>	
+	</ul>
+	
 	<ul class="wedding-package-list">
 		{{#each packages}}
 			<li>
@@ -10,11 +15,12 @@
 				{{#each proposals}}
 					<div>{{entry}}</div>
 				{{/each}}
-								
-				<em>Hrly Rehearsal Price: ${{../price.rehearsal}} </em>
-				<em>Tax: ${{../price.rehearsalTax}}</em>
-				<em>Total for the hour: $163.31</em>				
-				<em>Hrly Dinner Price: ${{../price.dinner}}</em>				
+				{{#if @first}}
+					<em>Hrly Rehearsal Price: $150.00 </em>
+					<em>Tax: $13.31</em>
+					<em>Total for the hour: $163.31</em>				
+					<em>(Hrly Dinner Price: $85.00)</em>				
+				{{/if}}
 			</li>
 		{{/each}}
 	</ul>
@@ -23,7 +29,8 @@
 		<h2>Contact a Wedding Planner</h2>
 		<div class="js-error-box">Uh, Oh. Looks like you missed a few fields! Can you fill those in? Thanks!</div>
 		<form method="POST" action="contact.php"> Fields marked (*) are required		
-			<input type="hidden" name="mailTo" value="nolivo1@gmail.com" />
+			<input type="hidden" name="mailTo1" value="mccray@chicdesignevents.com" />
+			<input type="hidden" name="mailTo2" value="suiteat116@gmail.com" />
 			<input type="hidden" name="Mode" value="wedding" />
 			<p>Email:* <br /> <input class="text email" name="Email" type="text" /></p>
 			<p>Tel:* <br /> <input class="text tel" name="Tel" type="text" /></p>

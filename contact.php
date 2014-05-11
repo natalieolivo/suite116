@@ -6,10 +6,11 @@
 
 // get posted data into local variables
 //$EmailFrom = Trim(stripslashes($_POST['EmailFrom'])); 
-$EmailTo = Trim(stripslashes($_POST['mailTo']));
+$EmailTo1 = Trim(stripslashes($_POST['mailTo1']));
+$EmailTo2 = Trim(stripslashes($_POST['mailTo2']));
 $FirstName = Trim(stripslashes($_POST['FirstName'])); 
 $LastName = Trim(stripslashes($_POST['LastName'])); 
-$Subject = "RE: $FirstName's Interest in Suite 116 Event Rental";
+$Service = Trim(stripslashes($_POST['service']));
 $Address = Trim(stripslashes($_POST['Address'])); 
 $City = Trim(stripslashes($_POST['City'])); 
 $State = Trim(stripslashes($_POST['State'])); 
@@ -17,6 +18,7 @@ $PostCode = Trim(stripslashes($_POST['PostCode']));
 $Tel = Trim(stripslashes($_POST['Tel']));
 $Mobile = Trim(stripslashes($_POST['Mobile'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
+$Subject = "RE: $Email's Interest in Suite 116 $Service";
 $Comments = Trim(stripslashes($_POST['Comments']));
 $ReferredByYelp = $_POST['Yelp'];
 $ReferredBySE = $_POST['SearchEngine'];
@@ -106,13 +108,14 @@ $Body .= "\n";
 $Body .= $Subscribed;
 // send email 
 //$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-$success = mail($EmailTo, $Subject, $Body);
+$success1 = mail($EmailTo1, $Subject, $Body);
+$success2 = mail($EmailTo2, $Subject, $Body);
 
 // redirect to success page 
-if ($success){
+if (($success1 && $success2) || $Mode=="normal"){  
   print "<meta http-equiv=\"refresh\" content=\"0;URL=email-success.php\">";
 }
-else{
+else{  
   print "<meta http-equiv=\"refresh\" content=\"0;URL=email-error.php\">";
 }
 ?>

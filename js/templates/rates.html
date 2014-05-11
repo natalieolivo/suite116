@@ -1,18 +1,20 @@
-<div id="services">
-	<h3>Suite 116 Price list </h3>
-	<ul>    
-		{{#each rates}}
-			<li><em>{{day}}</em></li>
-			<li>{{../specialRateText}} &ndash; ${{specialRate}}</li>
-			<li>{{../hourRateText}} &ndash; ${{hourRate}}</li>
-		{{/each}}
-	</ul>
-	<h3><em>Additional Info:</em></h3>
-	
-	<ul class="additional-info">
-		<li>**Security: ${{securityRate}}</li>
-		{{#additionalInfo}}			
-			<li>{{info}}</li>
-		{{/additionalInfo}}		
-	</ul>
-</div>
+<section class="body">
+	<div id="services">
+		<h2>Suite 116 Price list </h2>
+		<ul>    
+			{{#each rates}}
+				<li><em>{{day}}</em></li>
+				<li>{{../specialRateText}} &ndash; ${{specialRate}}</li>
+				<li>{{../hourRateText}} &ndash; ${{hourRate}}</li>
+			{{/each}}
+		</ul>
+		
+		<h2><em>Additional Info:</em></h2>		
+		<ul class="additional-info">
+			<li>**Security: ${{securityRate}}</li>
+			{{#additionalInfo}}			
+				<li>{{info}}</li>
+			{{/additionalInfo}}		
+		</ul>
+	</div>
+</section>

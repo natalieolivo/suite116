@@ -1,4 +1,5 @@
 
+// get the data from a json call, js/data/rates.json
 $(document).ready(function(){  
   var getPageData = function() {
     var success = function (data) {
@@ -6,7 +7,7 @@ $(document).ready(function(){
     };
     $.ajax({
       dataType : "json",
-      url      : "js/data/dance.json",  
+      url      : "js/data/home.json",  
       success  : success,    
       error   : function(a, b, errorThrown) {
         console.log(errorThrown);
@@ -14,13 +15,11 @@ $(document).ready(function(){
     }).done(function(data) {
       $.ajax({
         dataType: "html",
-        url: "js/templates/dance.html",  
+        url: "js/templates/home.html",  
         success: function(html){        
-          console.log("SUCCESS:: Ready to compile template:", html);
-          var template = Handlebars.compile(html);                      
-          $(".page").append(template(data));
-          S116.Form.setValidationFields();
-          S116.Form.checkForErrors();            
+          var template = Handlebars.compile(html);
+          //$(".page .home").append('what what');
+          $(".page .home").append(template(data));
         }
       });    
     });    

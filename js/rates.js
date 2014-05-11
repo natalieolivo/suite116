@@ -18,7 +18,7 @@ $(document).ready(function(){
         url: "js/templates/rates.html",  
         success: function(html){        
           var template = Handlebars.compile(html);                      
-          $(".page").append(template(data));
+          $(".page").append(template(data));          
         }
       });    
     });    

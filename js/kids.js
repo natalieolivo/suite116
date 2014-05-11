@@ -20,7 +20,8 @@ $(document).ready(function(){
           var template = Handlebars.compile(html);                      
           $(".page").append(template(data));
           S116.Form.setValidationFields();
-          S116.Form.checkForErrors();          
+          S116.Form.checkForErrors();                   
+          $(document).trigger("pageReady", [".bxslider"]);          
         }
       });    
     });    

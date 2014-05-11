@@ -115,11 +115,12 @@ you can use the generic selector below, but it's slower:
 a { color: rgb(204,0,0); }
 nav {
 	font-family: "Justus Roman";
-width: 100%;
-height: 70px;
-font-size: 1rem;
-letter-spacing: 1px;
-background: #2B2B2B;	
+	width: 100%;
+	height: 70px;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	background: #000;
+	border-bottom: solid 1px #3D3C3C;	
 }
 nav ul { 
 	margin-left: 20px; 
@@ -162,12 +163,6 @@ nav li a {
 header {
 	position: relative;
 }
-.page header figure {
-	position: absolute;
-	top: 31px;
-	z-index: 999;
-	left: -17px;
-}
 .page img { display: block; }			
 		
 .page figure {
@@ -185,7 +180,7 @@ header {
 	box-sizing: border-box;
 }
 .page section {
-	/*padding: 0 50px;*/
+	/*padding: 0 0 0 150px;*/
 }
 
 /** table display centering **/
@@ -193,70 +188,34 @@ header {
 	width: 50%;
 	margin: 0 auto;
 }
-
-.page figure figcaption {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 90%;
-
-	box-sizing: border-box;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);				
-	transform: translate(-50%, -50%);								
-}
-.page figure figcaption.top-anchor {
-	top: 21%;
-}
-.page figure figcaption.top-anchor.first {
-	display: none;
-}
-.page figure figcaption.bottom-anchor {
-	position: fixed;
-	top: 60%;
-	z-index: 999;
-	width: 50%;
-}
-.page figure figcaption.block-text {
-	font-family: 'Justus Roman';				
-	font-size: 4.6em;
-	background: rgba(0,0,0,.70);				
-	color: #e21d1d;
-	padding: 2%;
-	line-height: 1em;
-	text-shadow: rgba(0,0,0,0.80) 2px 0;				
-}
-.page figure figcaption span {
-	display: block;
-}
-.page figure figcaption span.icon-arrow-right {
-	display: none;
-}
 section.page { 
-	width: 96%;	
-	background: #fff; 
-	max-width: 1000px;	
-	margin: 0 auto;
+	width: 100%;	
+	background: #fff;	
 	position: relative;
 	font-size: .85rem;
 	font-family: Arial, Helvetica, sans-serif;
 }
 section.page .body {
-	padding-left:200px;
+	width: 75%;
+	margin: 0 auto;
 }
+
+section.page .body.home {
+	width: 100%;
+	background: #000;
+	padding: 20px 0 0;
+}
+
 section.page > ul {
 	margin: 0px 0 40px 190px;
 }
 section.page h2 {
 	font-family: "Justus Roman", "Arial";
-	margin: 20px 0 20px 0;
+	margin: 40px 0 20px 0;
 	padding-bottom: 10px;
 	border-bottom: solid 1px #ddd;
 }
-section.page .body ul li {
-	margin-top: 18px;
-}
+
 section.page ul.more em {
 	margin-right: 0;
 }
@@ -269,7 +228,7 @@ section.page ul li em {
 	font-size: 16px;
 }
 section.page .dance-styles { 
-	display: block; 
+	display: block;
 	margin-top: 4px;
 }
 
@@ -279,17 +238,32 @@ section.page header figure {
 section.page img {
 	max-width: 100%;
 }
-
+.packages {
+	background: #fff;
+}
 .packages li {
-	width: 30%;
-	margin: 0 .94rem 0;
-	text-align: center;	
+	width: 30.8%;
+	margin: 60px 1.26% 40px;
+	text-align: center;
+	display: block;
+	float: left;
+}
+.packages li a {
+	color: #000;
+	margin: 0 0 10px 0;
+	display: block;
+	text-decoration: none;
+}
+.packages li a:hover {
+	text-decoration: underline;
+	color: rgb(216, 193, 124);
 }
 .packages li figure {
 	overflow: hidden;
 }
 .packages p {
 	padding: 16px 0;
+	text-align: justify;
 }
 .packages li span {
 	font-family: 'Justus Roman', 'Georgia';
@@ -299,31 +273,75 @@ section.page img {
 
 footer {
 	background: #000;
-	height: 50px;	
+	height: 50px;
+	font-size: 14px;
+	font-family: "Justus Roman", "serif";
+	padding: 40px 20px 0;
+	text-align: center;
 }
 footer li {
 	color: #fff;
+	margin-right: 24px;	
+}
+
+footer li a {
+	color: #ddd;
 }
 
 /* MIDWAY BREAKPOINTS */
-@media (max-width: 860px) {
-	.page figure figcaption.banner {
-	font-size: 30px;
-	}
-	.page figure figcaption.block-text {								
-	font-size: 2.3em;
-	line-height: 1.1em;	
-	}
+@media (max-width: 860px) {	
 	.page section {
 		padding: 0px;
-	}
-
-	.page figure figcaption.bottom-anchor {
-		top: 78%;
-	}
+	}	
 }
 
 @media (max-width: 768px) {
+	section.page .body {
+		width: 90%;
+	}
+	table, thead, tbody, th, td, tr { 
+		display: block !important; 
+	}
+	.subheader td,
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}	
+	table td { width: auto !important; }	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%;
+		text-align: right;
+	}
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align: left;
+	}
+
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Star Suite Treatment"; }
+	td:nth-of-type(2):before { content: "Stellar Suite Treatment"; }
+	td:nth-of-type(3):before { content: "Supernova Suite Treatment"; }
+	td:nth-of-type(4):before { content: "Star Suite Treatment"; }
+	td:nth-of-type(5):before { content: "Stellar Suite Treatment"; }
+	td:nth-of-type(6):before { content: "Supernova Suite Treatment"; }
+	td:nth-of-type(7):before { content: "Star Suite Treatment"; }
+	td:nth-of-type(8):before { content: "Stellar Suite Treatment"; }
+	td:nth-of-type(9):before { content: "Supernova Suite Treatment"; }
+
 	.page figure figcaption.banner {
 		padding-left: 13%;
 	}
@@ -335,6 +353,7 @@ footer li {
 	.packages li { 
 		display: block; 
 		width: 100%;
+		margin: 20px 0;
 	}
 	section.page .body {
 		padding: 0;
@@ -343,71 +362,45 @@ footer li {
 
 /** SMALL RES BREAKPOINTS **/
 @media (max-width: 532px) {
-	nav ul { cursor: pointer; }	
-	nav ul.js-expanded {
-		background: black;
-		width: 10em;
-		padding: 0 0 .4em;					
+	nav ul { cursor: pointer; }		
+	.packages p {
+		padding: 16px;
 	}
-	nav ul.js-expanded li { margin: 1em .6em; }				
-	nav ul.js-expanded:before {
-		content: "-hide";
-		background: black;
-		color: #fff;
-	}
-	.page figure.first img {
-		padding: 0;
-	}
-	section.page figure img {
-		display: none;
-	}
-	.page figure figcaption.top-anchor.first {		
-		padding: 80px 0 10px 20px;
+	footer li:first-child {
 		display: block;
-		position: static;
-		-webkit-transform: translate(0);
-		-moz-transform: translate(0);
-			transform: translate(0);
-		background: rgb(204,0,0);
-     }
-	 .page figure .top-anchor.first p {
-		 margin-bottom: .5em;
-	 }
-	.page figure figcaption.top-anchor {		
-		display: none;		
-     }
-	.page figure figcaption.block-text {								
-		display: none;
-		
+		margin-bottom: 10px;
 	}
-	/* utility classes */
-	.hide { display: none; }
-	.show { display: block; }
-
-	.social-twitter {
-		display: none;
+	footer li {
+		margin-right: 4px;		
 	}
-
-	.social-facebook-like {
-		display: none;		
+	footer li a {
+		color: rgb(216, 193, 124);
 	}
-
 	.page .suite-map {
 		padding: 1em;
 	}
 	.page #floor-plan {
 		padding: 80px 0;
 		margin-left: 1em;
+	}
+	td {
+		font-size: 12px;
+	}
+	.number a {		
+		color: rgb(216, 193, 124);
+	}
+	.number { 
+		font-size: 14px !important; 
+		top: 40% !important;
 	}	
 }
 
 .social-twitter {	
 	padding: 6px !important;	
 }
-.social-facebook-like {
-	margin: 0 auto;
-	width: 96%;
-	max-width: 1000px;
+.social-facebook-like {	
+	width: 100%;
+	clear: both;
 }
 
 /* Form */
@@ -445,15 +438,25 @@ input.error {
 	font-size: 1.4em; 
 	color: rgb(204,0,0); 
 }
+.number {
+	position: absolute;
+	top: 90%;
+	right: 15%;
+	z-index: 999;
+	color: rgb(216, 193, 124);
+	font-size: 30px;
+	font-family: Justus Roman;
+}
 /**
 	WEDDING PACKAGES
 **/
+.wedding-package-list li { margin-bottom: 40px; }
 .wedding-package-list li div { margin-top: 10px; }
 
 /**
 	TABLE LAYOUT
 **/
-table {
+table {	
 	display: table;
 	border-collapse: collapse;	
 	text-align: center;
@@ -463,6 +466,18 @@ table thead th {
 	font-size: 16px;
 	padding: 10px 0;
 }
+table tr:first-of-type td {
+	font-weight: bold; 
+	font-family: 'icomoon';
+}
+table tr:first-of-type td:before { padding-right: 10px; }
+table tr:first-of-type td:nth-child(1):before,
+table tr:first-of-type td:nth-child(4):before { content: '\e604'; }
+table tr:first-of-type td:nth-child(2):before,
+table tr:first-of-type td:nth-child(5):before { content: '\e604\e604'; }
+table tr:first-of-type td:nth-child(3):before,
+table tr:first-of-type td:nth-child(6):before { content: '\e604\e604\e604'; }
+
 table tr { width: 100%; }
 table td {	
 	width: 200px;
@@ -472,5 +487,5 @@ table td:nth-child(n-4) {
 	background: rgb(243, 243, 243);
 }
 table td:nth-child(n+4) {
-	background: rgb(228, 205, 79);
+	background: rgb(216, 193, 124);
 }

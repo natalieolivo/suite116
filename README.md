@@ -17,3 +17,5 @@ To push changes to prod the following has to be configured into git
 
   
 Once this is setup in your .git config file, then you can perform a git push prod to get your changes to the godaddy host server.
+
+Password? Just add "!"

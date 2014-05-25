@@ -1,10 +1,10 @@
 <footer>
-	<ul>
-		<li>Suite116 © 2014. All Rights Reserved.</li>
-		<li><a href="/">Home</a></li>
-		<li><a href="rates.php">Rates</a></li>
-		<li><a href="floor-plan.php">Floor Plan</a></li>
-		<li><a href="email-us.php">Email Us</a></li>
-		<li><a href="map.php">Map</a></li>
+	<ul class="social">	
+		<li>Suite116 © 2014. All Rights Reserved.</li>			
+		<li class="social-twitter"></li>
+		<li class="social-facebook"></li>
+		<li class="social-googleplus"></li>		
+		<li class="social-pinterest"></li>
+		<li class="social-mail"><a href="mailto:suiteat116@gmail.com" class="icon-mail"></a></li>		
 	</ul>
 </footer>

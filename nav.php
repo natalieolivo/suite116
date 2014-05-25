@@ -1,11 +1,12 @@
 <nav>
-	<ul class="js-toggle-state social">				
-		<li class="social-twitter"></li>
-		<li class="social-facebook"></li>
-		<li class="social-googleplus"></li>		
-		<li class="social-pinterest"></li>
-		<li class="social-mail"><a href="mailto:suiteat116@gmail.com" class="icon-mail"></a></li>		
-	</ul>
+	<div class="burger"></div>
+	<ul class="navlist">		
+		<li><a href="/">Home</a></li>
+		<li><a href="rates.php">Rates</a></li>
+		<li><a href="floor-plan.php">Floor Plan</a></li>
+		<li><a href="email-us.php">Email Us</a></li>
+		<li><a href="map.php">Map</a></li>
+	</ul>	
 	<div class="logo"><a href='/'>Suite<span>116</span></a></div>
 	<div class="address">114 W 116th Street, NY, NY</div>
 	<figure>

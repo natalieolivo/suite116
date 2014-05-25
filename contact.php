@@ -108,11 +108,15 @@ $Body .= "\n";
 $Body .= $Subscribed;
 // send email 
 //$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-$success1 = mail($EmailTo1, $Subject, $Body);
-$success2 = mail($EmailTo2, $Subject, $Body);
+if($EmailTo1 && $EmailTo2) {
+	$toArray = array($EmailTo1, $EmailTo2);
+	$success = mail(implode(',', $toArray), $Subject, $Body);	
+} else {
+	$success = mail($EmailTo1, $Subject, $Body);	
+}
 
 // redirect to success page 
-if (($success1 && $success2) || $Mode=="normal"){  
+if ($success){  
   print "<meta http-equiv=\"refresh\" content=\"0;URL=email-success.php\">";
 }
 else{  

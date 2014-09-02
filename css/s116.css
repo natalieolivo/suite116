@@ -351,17 +351,17 @@ footer li a {
 		margin: 20px 10px;
 	}
 	section.page .body {
-		width: 90%;
+		width: 98%;
 	}
 	table, thead, tbody, th, td, tr { 
 		display: block !important; 
 	}
-	.subheader td,
+	/*.subheader td,
 	thead tr { 
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
-	}	
+	}*/	
 	table td { width: auto !important; }	
 	td { 
 		/* Behave  like a "row" */
@@ -510,7 +510,8 @@ input.error {
 /**
 	TABLE LAYOUT
 **/
-table {	
+table {
+	width: 100%;	
 	display: table;
 	border-collapse: collapse;	
 	text-align: center;
@@ -534,12 +535,28 @@ table tr:first-of-type td:nth-child(6):before { content: '\e604\e604\e604'; }
 
 table tr { width: 100%; }
 table td {	
-	width: 200px;
+	width: 50%;
 	padding: 8px;	
 }
-table td:nth-child(n-4) {
+#babyShower-table {
+	background: rgb(216, 193, 124);
+}
+#babyShower-table .item11, 
+#babyShower-table .item12,
+#babyShower-table .item13 {
+	display: none !important;
+}
+#kidBirthday-table {
+	background: rgb(243, 243, 243);
+}
+
+.price {
+	font-weight: bold;
+	font-size: 18px;
+}
+/*table td:nth-child(n-4) {
 	background: rgb(243, 243, 243);
 }
 table td:nth-child(n+4) {
 	background: rgb(216, 193, 124);
-}
+}*/

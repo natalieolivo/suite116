@@ -6,7 +6,7 @@ $(document).ready(function(){
     };
     $.ajax({
       dataType : "json",
-      url      : "js/data/kids.json",  
+      url      : "js/data/kids2.json",  
       success  : success,    
       error   : function(a, b, errorThrown) {
         console.log(errorThrown);

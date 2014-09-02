@@ -12,115 +12,121 @@
 			<li></li>
 		</ul>		
 	</div>
-	<table>
-		<thead>
-		<tr>
-			{{#each packageTypes}}
-				<th colspan="3">{{this}}</th>
-			{{/each}}
-		</tr>
-		</thead>
-		<tr class="subheader">
+
+	{{#each table}}			
+		<table id="{{tableID}}-table">
+			<thead>
+				<tr>					
+					<th colspan="3">{{packageType}}</th>					
+				</tr>
+			</thead>
+			<tr>
 			{{#each packages}}
-				<td>{{title}}</td>				
+				<td>{{title}}</td>
 			{{/each}}
-		</tr>	
-		<tr >
+			</tr>
+			<tr>
+			{{#each guests}}
+				<td>Accomodates up to {{amount}} guests</td>
+			{{/each}}
+			</tr>
+			
+			<tr>
 			{{#each packages}}
-				<td>{{capacity}}</td>
+				<td class="hours">{{rentaltime}}</td>							
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}		
-				<td>{{daysRange}}</td>
+			</tr>			
+
+			<tr>
+			{{#each packages}}
+				<td>{{item1}}</td>							
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}		
-				<td>{{inviteType}}</td>
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item2}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{item1Deal}}}</td>			
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item3}}</td>							
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{item2Deal}}}</td>			
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item4}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{spaceDeal}}}</td>			
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item5}}</td>							
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{staffDeal}}}</td>			
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item6}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{giftDeal}}}</td>
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item7}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{supplyDeal}}}</td>
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{{item8}}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{takeAwayDeal}}}</td>
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{item9}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{foodDeal}}}</td>
+			</tr>
+
+			<tr>
+			{{#each packages}}
+				<td>{{{item10}}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{treatDeal}}}</td>
+			</tr>
+
+			<tr class="item11">
+			{{#each packages}}
+				<td>{{{item11}}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{balloonDeal}}}</td>
+			</tr>
+			
+			<tr class="item12">
+			{{#each packages}}
+				<td>{{{item12}}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{photoDeal}}}</td>
+			</tr>
+			
+			<tr class="item13">
+			{{#each packages}}
+				<td>{{item13}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{centerpieceDeal}}}</td>
+			</tr>
+			
+			<tr>
+				<td>Party add-ons are offered<br> at an additional cost</td>
+				<td>Party add-ons are offered<br> at an additional cost</td>
+			</tr>
+			<tr>
+			{{#each packages}}
+				<td class="price">${{price}}</td>
 			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{maxNumberGuests}}}</td>
-			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>${{{price}}}</td>
-			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>{{{pricePerChild}}} per addt'l child</td>
-			{{/each}}
-		</tr>
-		<tr>
-			{{#each packages}}			
-				<td>${{{deposit}}}</td>
-			{{/each}}
-		</tr>			
-	</table>
+			</tr>	
+
+		</table>
+	{{/each}}
 
 	<div id="email-kids">
 		<h2>Contact a Birthday / Shower Planner</h2>

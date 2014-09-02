@@ -1,0 +1,90 @@
+{
+	"table" : [{
+		"tableID" : "kidBirthday",
+		"packageType" : "Kids Birthday Parties",
+		"packages" : [{
+			"title": "Star Suite Treatment",
+			"rentaltime": "3 Hours",
+			"item1": "Decoration Setup",
+			"item2": "Balloon Bouquet Centerpieces",
+			"item3": "15 Single Balloons",
+			"item4": "6 Wall Decorations",
+			"item5": "Table Covers",
+			"item6": "120 Cups",
+			"item7": "120 Dinner Plates",
+			"item8": "120 Forks, Spoons &amp; Knives",
+			"item9": "120 Napkins",
+			"item10": "Your Choice of 1 Hour Face<br> Painting or Balloon Making",
+			"item11": "Personalized Happy <br> Birthday Banner",
+			"item12": "60 Invitations &amp;<br> Thank You Cards",
+			"item13": "Decorative Cake Table",
+			"price": 1525
+			},			
+			{
+			"title": "Stellar Suite Treatment",
+			"rentaltime": "5 Hours",
+			"item1": "Decoration Setup",
+			"item2": "Balloon Bouquet Centerpieces",
+			"item3": "15 Single Balloons",
+			"item4": "6 Wall Decorations",
+			"item5": "Table Covers",
+			"item6": "120 Cups",
+			"item7": "120 Dinner Plates",
+			"item8": "120 Forks, Spoons &amp Knives",
+			"item9": "120 Napkins",
+			"item10": "Your Choice of 1 Hour Face<br> Painting or Balloon Making",
+			"item11": "Personalized Happy <br> Birthday Banner",
+			"item12": "60 Invitations &amp;<br> Thank You Cards",
+			"item13": "Decorative Cake Table",
+			"price": 1750
+
+		}],
+		"guests" : [{
+			"amount": 60
+		},{
+			"amount": 60
+		}]
+	},{
+		"tableID" : "babyShower",
+		"packageType" : "Baby Shower",
+		"packages" : [{
+			"title": "Star Suite Treatment",
+			"rentaltime": "3 Hours",
+			"item1": "Decoration Setup",
+			"item2": "Balloon Bouquet Centerpieces",
+			"item3": "15 Single Balloons",			
+			"item4": "Table Covers",
+			"item5": "120 Cups",
+			"item6": "120 Dinner Plates",
+			"item7": "120 Forks, Spoons &amp; Knives",
+			"item8": "120 Napkins",			
+			"item9": "Personalized Shower Banner",
+			"item10": "60 Invitations &amp;<br> Thank You Cards",
+			"item11": "Decorative Cake Table",
+			"price": 1525
+			},			
+			{
+			"title": "Stellar Suite Treatment",
+			"rentaltime": "5 Hours",
+			"item1": "Decoration Setup",
+			"item2": "Custom Centerpieces",
+			"item3": "15 Single Balloons",			
+			"item4": "Table Covers",
+			"item5": "120 Cups",
+			"item6": "120 Dinner Plates",
+			"item7": "120 Forks, Spoons & Knives",
+			"item8": "120 Napkins",			
+			"item9": "Personalized Shower Banner",
+			"item10": "60 Invitations &amp;<br> Thank You Cards",
+			"item11": "Decorative Cake Table",
+			"price": 1750
+
+		}],
+		"guests" : [{
+			"amount": 60
+		},{
+			"amount": 60
+		}]
+
+	}]	
+}

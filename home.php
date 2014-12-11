@@ -1,4 +1,4 @@
-<section class="home body"><!-- Home Template -->	
+<section class="home body"><!-- Home Template touch -->	
 	<ul class="bxslider">
 		<li><img src="imgs/suite-01a.jpg" /></li>
 		<li><img src="imgs/suite-02a.png" /></li>

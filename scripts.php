@@ -1,8 +1,6 @@
 <section class="social-facebook-like">
     <?php include 'footer.php';?>
-    <script>
-        
-
+    <script>        
         (function(w, d){
             var urlEncoded = 'url='+encodeURIComponent(location.href).replace(/%20/g,'+'),
                 viaEncoded = "via=suite116",

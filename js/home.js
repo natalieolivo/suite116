@@ -20,8 +20,9 @@ $(document).ready(function(){
           var template = Handlebars.compile(html);
           //$(".page .home").append('what what');
           $(".page .home").append(template(data));
+          
           S116.Page = (function($pageSlider){
-        $(".burger").on("click", function() {
+            $(".burger").on("click", function() {
                 if($(this).siblings('.navlist').hasClass('expand')) {
                     $(this).siblings('.navlist').removeClass('expand');
                 } else {
@@ -45,9 +46,7 @@ $(document).ready(function(){
                 });
                 return this;
             });
-
-        })($(".bxslider"));
-          
+          })($(".bxslider"));
         }
       });    
     });    

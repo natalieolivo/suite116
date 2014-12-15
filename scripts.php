@@ -1,5 +1,7 @@
 <section class="social-facebook-like">
     <?php include 'footer.php';?>
+    <script type="text/javascript" src="js/utils/cookie.js"></script>
+    <script type="text/javascript" src="js/utils/url.js"></script>
     <script>        
         (function(w, d){
             var urlEncoded = 'url='+encodeURIComponent(location.href).replace(/%20/g,'+'),
@@ -29,6 +31,16 @@
             $("footer ul").append($pintLink);            
 
         }(window, document));
+    </script>
+    <script>
+        // check if cookie is set, if it isn't and it needs to be, set it
+        if(!S116.Cookie('admin')) {
+            S116.Admin.setAdminCookie(); 
+        }        
+        if(S116.Cookie('admin')) {            
+            S116.Admin.setDisplay();            
+            S116.Admin.setAdminEventHandlers(document.querySelector(".admin-link"));
+        }        
     </script>
     <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
 </section>

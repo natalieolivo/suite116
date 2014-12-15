@@ -17,8 +17,7 @@ $(document).ready(function(){
         dataType: "html",
         url: "js/templates/home.html",  
         success: function(html){        
-          var template = Handlebars.compile(html);
-          //$(".page .home").append('what what');
+          var template = Handlebars.compile(html);          
           $(".page .home").append(template(data));
           
           S116.Page = (function($pageSlider){

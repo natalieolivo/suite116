@@ -46,3 +46,52 @@ S116.Form = (function(w, d){
 		checkForErrors       : checkForErrors
 	};
 }(window, document));
+
+S116.Admin = (function() {
+	
+	function setAdminEventHandlers(link) {
+		link.addEventListener("click", function(){
+			showAdminPanel();	
+		});
+	}
+
+	function showAdminLink(link) {
+		if(S116.Cookie('admin')) {
+			link.classList.remove('hide');
+		}
+	}
+	
+	function setDisplay() {
+		showAdminLink(document.querySelector('.admin-link'));
+	}
+
+	function showAdminPanel(url) {
+		var mask = document.querySelector('.uploads-mask'),
+			panel = document.querySelector('.uploads-panel');
+
+		if(mask.classList.contains('hide') && panel.classList.contains('hide')) {
+			mask.classList.remove('hide');
+			panel.classList.remove('hide');	
+		}
+		
+		if(!mask.classList.contains('transition-show') &&
+			!panel.classList.contains('transition-show')) {			
+			mask.classList.add('transition-show');
+			panel.classList.add('transition-show');
+		}
+		
+	}
+
+	function setAdminCookie(){		
+		if(window.location.hash && S116.Url.isHashMatch(window.location.hash, "admin")) {			
+			S116.Cookie('admin', 'true');			
+		}
+	}
+
+	return {
+		setDisplay     		  : setDisplay,
+		setAdminCookie 		  : setAdminCookie,
+		showAdminLink    	  : showAdminLink,	
+		setAdminEventHandlers : setAdminEventHandlers 
+	};
+})();

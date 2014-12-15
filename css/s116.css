@@ -562,9 +562,47 @@ table td {
 #faq h3 { margin: 18px 0; }
 #faq li { display: block; margin-bottom: 10px; }
 
- /*table td:nth-child(n-4) {
-	background: rgb(243, 243, 243);
+.uploads-mask {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	background: #fff;
 }
-table td:nth-child(n+4) {
-	background: rgb(216, 193, 124);
-}*/
+
+.uploads-mask,
+.uploads-panel {
+	position: absolute;
+	z-index: 1000;
+}
+
+.uploads-panel {		
+	width: 50%;
+	background: #fff;
+	padding: 20px;	
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+
+    -moz-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);  
+  	-webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hide { display: none; }
+
+.transition-show.uploads-mask { 	
+	-webkit-transition: opacity 300ms 3s;
+	transition: opacity 300ms 3s;
+	opacity: .75;
+}
+.transition-show.uploads-panel {
+	opacity: 1;
+	-webkit-transition: opacity 600ms 600ms;
+	transition: opacity 600ms 600ms;
+}

@@ -3,13 +3,13 @@
 "hourRateText": "(1) hour",
 "rates":[{
     "day":"Friday",
-    "specialRate": "750",
-    "hourRate": "175"
+    "specialRate": "950",
+    "hourRate": "200"
   },
   {
     "day": "Saturday",
-    "specialRate": "800",
-    "hourRate": "175"
+    "specialRate": "1000",
+    "hourRate": "220"
   },
   {
     "day": "Sunday",
@@ -17,9 +17,9 @@
     "hourRate": "150"
   },
   {
-    "day": "Monday-Thursday",
-    "specialRate": "600",
-    "hourRate": "125"
+    "day": "Monday-Thursday <span>(Work Space Rates)</span>",
+    "specialRate": "",
+    "hourRate": "20-25"
   }],
   "securityRate": "120",
   "additionalInfo": [{

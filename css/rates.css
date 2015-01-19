@@ -22,6 +22,10 @@
 	line-height: 2em;
 }
 
+#services li:nth-child(11) {
+    display: none;
+}
+
 #services .additional-info {
 	list-style-type: disc;	
 }

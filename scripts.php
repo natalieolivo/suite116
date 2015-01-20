@@ -1,3 +1,4 @@
+<script type="text/javascript" src="js/utils/fetch.js"></script>
 <section class="social-facebook-like">
     <?php include 'footer.php';?>
     <script type="text/javascript" src="js/utils/cookie.js"></script>
@@ -40,7 +41,7 @@
         if(S116.Cookie('admin')) {            
             S116.Admin.setDisplay();            
             S116.Admin.setAdminEventHandlers(document.querySelector(".admin-link"));
-        }        
+        }      
     </script>
     <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
 </section>

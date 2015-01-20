@@ -6,7 +6,7 @@
 			<header>
 				<?php include 'nav.php'; ?>				
 			</header>
-			<?php include 'wedding/main.php';?>
+			<section class="wedding"></div>  
 		</section>		
 		<?php include 'scripts.php';
 		$FNAME = $_GET['fname'];
@@ -36,6 +36,11 @@
 				Comments  : '<?=$COMMENTS?>'
 			});																
 		});
+
+		S116.Ajax.getPageData('wedding').done(function(data){
+			S116.Ajax.afterFetch(data).done(S116.Form.setValidationFields, S116.Form.checkForErrors);
+		});				
+		
 		</script>		
 	</body>		
 </html>

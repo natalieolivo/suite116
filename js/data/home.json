@@ -14,5 +14,6 @@
 		"link":"dance.php",
 		"image":"groovefit1.jpg",
 		"copy":"GrooveFit and Suite116 have unique packages to serve events and unique dance experiences. We offer numerous dance styles and an amazing raw space available seven days a week."
-	}]
+	}],
+	"template": "home"
 }

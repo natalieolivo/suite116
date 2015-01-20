@@ -6,8 +6,13 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'kids/main.php';?>
+			<section class="kids"></div>
 		</section>		
-		<?php include 'scripts.php';?>		
+		<?php include 'scripts.php';?>
+		<script>			
+			S116.Ajax.getPageData('kids').done(function(data){
+				S116.Ajax.afterFetch(data).done(S116.Form.setValidationFields, S116.Form.checkForErrors);
+			});				
+		</script>		
 	</body>		
 </html>

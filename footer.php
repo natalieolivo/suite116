@@ -1,6 +1,6 @@
 <footer>
 	<ul class="social">	
-		<li>Suite116 © 2014. All Rights Reserved.</li>			
+		<li>Suite116 © 2015. All Rights Reserved.</li>			
 		<li class="social-twitter"></li>
 		<li class="social-facebook"></li>
 		<li class="social-googleplus"></li>		

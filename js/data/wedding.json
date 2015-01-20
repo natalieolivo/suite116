@@ -45,5 +45,6 @@
 		"rehearsal":"150.00",
 		"rehearsalTax":"13.31",
 		"dinner":"85.00"			
-	}
+	},
+	"template" : "wedding"
 }

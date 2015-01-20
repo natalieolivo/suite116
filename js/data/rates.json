@@ -33,5 +33,6 @@
   },
   {
      "info" : "Events held within 30 days of booking will receive %10 off of total cost of rental."
-  }]
+  }],
+  "template": "rates"
 }

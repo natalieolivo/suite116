@@ -6,8 +6,11 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'rates/main.php';?>
+			<section class="rates"></div>			
 		</section>
-		<?php include 'scripts.php';?>		
+		<?php include 'scripts.php';?>
+		<script>
+			S116.Ajax.getPageData('rates').done(S116.Ajax.afterFetch);		
+		</script>
 	</body>		
 </html>

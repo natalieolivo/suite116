@@ -6,7 +6,7 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'floor-plan/main.php';?>
+			<section class="floor-plan"></div>  
 		</section>
 		<?php include 'scripts.php';?>
 		<script src="js/third-party/three.min.js"></script>
@@ -82,7 +82,7 @@
           renderer.render(scene, camera);
           controls.update();
         }
-		
+		    S116.Ajax.getPageData('floor-plan').done(S116.Ajax.afterFetch);
   		</script>
 	</body>		
 </html>

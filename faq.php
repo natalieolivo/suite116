@@ -6,8 +6,11 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'faq/main.php';?>
+			<section class="faq"></div>					
 		</section>		
-		<?php include 'scripts.php';?>		
+		<?php include 'scripts.php';?>
+		<script>
+			S116.Ajax.getPageData('faq').done(S116.Ajax.afterFetch);				
+		</script>
 	</body>		
 </html>

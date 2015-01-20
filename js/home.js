@@ -1,7 +1,7 @@
 
 // get the data from a json call, js/data/rates.json
 $(document).ready(function(){  
-  var getPageData = function() {
+  S116.Ajax.getPageData = function(page) {
     var success = function (data) {
       //console.log(data);      
     };

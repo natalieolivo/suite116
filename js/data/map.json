@@ -1,3 +1,4 @@
 {
-  "something":"value"
+  "something":"value",
+  "template" : "map"
 }

@@ -6,7 +6,7 @@ S116.Form = (function(w, d){
 		validationFields = o;
 		return o;	
 	};
-	var setValidationFields = function() {
+	var setValidationFields = function() {		
 		console.log(validationFields);
 		for(input in validationFields) {			
 			if(validationFields.hasOwnProperty(input)) {
@@ -14,7 +14,7 @@ S116.Form = (function(w, d){
 			}
 		}
 	};
-	var checkForErrors = function() {
+	var checkForErrors = function() {		
 		//get query string
 		var url = document.location.href;
 		var pstr = url;
@@ -50,8 +50,12 @@ S116.Form = (function(w, d){
 S116.Admin = (function() {
 	
 	function setAdminEventHandlers(link) {
-		link.addEventListener("click", function(){
-			showAdminPanel();	
+		var uploadBtn = document.querySelector(".upload-button");
+
+		link.addEventListener("click", showAdminPanel);
+		
+		uploadBtn.addEventListener("click", function(){
+			uploadImageFiles(document.querySelectorAll(".image-input"));
 		});
 	}
 
@@ -86,12 +90,30 @@ S116.Admin = (function() {
 		if(window.location.hash && S116.Url.isHashMatch(window.location.hash, "admin")) {			
 			S116.Cookie('admin', 'true');			
 		}
+	}	
+
+	function uploadImageFiles(fileInputs) {
+		var filereader = new FileReader(),
+			form = document.querySelector("#image-upload"), 
+			data = new FormData(form);		
+
+    	console.debug("formdata", data);
+			
+		asyncSendImageData(form, data);
+		return false;		
+	}
+
+	function asyncSendImageData(form, data) {
+		var xhr = new XMLHttpRequest;		
+		xhr.open("POST", form.action);
+		console.debug(data);
+		xhr.send(data);
 	}
 
 	return {
 		setDisplay     		  : setDisplay,
 		setAdminCookie 		  : setAdminCookie,
 		showAdminLink    	  : showAdminLink,	
-		setAdminEventHandlers : setAdminEventHandlers 
+		setAdminEventHandlers : setAdminEventHandlers
 	};
 })();

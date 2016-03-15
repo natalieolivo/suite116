@@ -239,6 +239,10 @@ section.page .dance-styles {
 	margin-top: 4px;
 }
 
+.dance section.body {
+	margin-bottom: 80px;
+}
+
 section.page header figure {
 	width: 17%;
 }

@@ -6,7 +6,7 @@
 			<header>
 				<?php include 'nav.php'; ?>					
 			</header>
-			<?php include 'dance/main.php';?>
+			<?php include 'repast/main.php';?>
 		</section>		
 		<?php include 'scripts.php';?>		
 	</body>		

@@ -6,7 +6,7 @@ $(document).ready(function(){
     };
     $.ajax({
       dataType : "json",
-      url      : "js/data/dance.json",  
+      url      : "js/data/repast.json",  
       success  : success,    
       error   : function(a, b, errorThrown) {
         console.log(errorThrown);
@@ -14,7 +14,7 @@ $(document).ready(function(){
     }).done(function(data) {
       $.ajax({
         dataType: "html",
-        url: "js/templates/dance.html",  
+        url: "js/templates/repast.html",  
         success: function(html){        
           console.log("SUCCESS:: Ready to compile template:", html);
           var template = Handlebars.compile(html);                      

@@ -8,6 +8,6 @@
 			</header>
 			<?php include 'repast/main.php';?>
 		</section>		
-		<?php include 'scripts.php';?>		
+		<?php include 'scripts.php';?>	
 	</body>		
 </html>

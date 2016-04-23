@@ -31,7 +31,7 @@ $(document).ready(function(){
             if($pageSlider.length > 0) {        
                 $pageSlider.bxSlider({
                     auto: true,
-                    autoControls: true,
+                    autoControls: false,
                     mode: 'fade'
                 });
                 return this;    
@@ -40,7 +40,7 @@ $(document).ready(function(){
                 if(slider.length<1) return;       
                 $(slider).bxSlider({
                     auto: true,
-                    autoControls: true,
+                    autoControls: false,
                     mode: 'fade'
                 });
                 return this;

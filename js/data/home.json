@@ -1,10 +1,5 @@
 {
 	"touts": [{
-		"title":"Wedding Packages",
-		"link":"wedding.php",
-		"image":"wedding1.jpg",
-		"copy":"Our Wedding Planning Partners are best in industry experts. There is so much to remember for such a big day! Book an expert today, and relieve some of the stresses of arranging your big day."
-	},{
 		"title":"Family Packages",
 		"link":"kids.php",
 		"image":"centerpiece.jpg",

@@ -52,6 +52,7 @@
 	z-index: 999;
 	top: -2rem;
 	margin-left: 2rem;
+	display: none;
 }
 .bx-pager-item {
 	display: inline-block;

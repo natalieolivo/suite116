@@ -120,7 +120,8 @@ nav {
 	font-size: 1rem;
 	letter-spacing: 1px;
 	background: #000;
-	border-bottom: solid 1px #3D3C3C;	
+	border-bottom: solid 1px #3D3C3C;
+	padding: 14px 0;
 }
 nav ul { 
 	margin-left: 20px; 
@@ -130,7 +131,7 @@ nav li {
 	color: #fff;
 }
 nav .logo {	
-	margin: 0 330px 0 24px;
+	margin: 0 330px 0 12px;
 	color: red;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -162,7 +163,8 @@ nav li a:hover {
 	width: 74%;
 	margin-top: 20px;
 }
-.address {	
+.address,
+.number {	
 	color: #fff;
 	padding: 0 10px 0 10px;
 	font-size: .7rem;
@@ -496,15 +498,7 @@ input.error {
 	font-size: 1.4em; 
 	color: rgb(204,0,0); 
 }
-.number {
-	position: absolute;
-	top: 90%;
-	right: 15%;
-	z-index: 999;
-	color: rgb(216, 193, 124);
-	font-size: 30px;
-	font-family: Justus Roman;
-}
+
 /**
 	WEDDING PACKAGES
 **/

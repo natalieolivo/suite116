@@ -3,7 +3,7 @@
 */
 .bx-wrapper {
 	position: relative;
-	max-width: 75% !important;
+	max-width: 75% !important;	
 	margin: 0 auto;	
 }
 
@@ -149,4 +149,13 @@
 	.bx-controls-direction .bx-next {
 		right: -110px;	
 	}	
+}
+
+@media (min-width: 768px) {
+	section.page .body.home {
+		min-height: 750px;
+	}
+	.body.home .bx-viewport {
+		min-height: 565px;
+	}
 }

@@ -131,7 +131,7 @@ nav li {
 	color: #fff;
 }
 nav .logo {	
-	margin: 0 330px 0 12px;
+	margin: 0 330px 0 24px;
 	color: red;
 	font-size: 16px;
 	text-transform: uppercase;	
@@ -165,9 +165,14 @@ nav li a:hover {
 .address,
 .number {	
 	color: #fff;
-	padding: 0 10px 0 10px;
+	padding: 0 10px 0 24px;
 	font-size: .7rem;
 }
+
+.number {
+	padding-top: 4px;
+}
+
 header {
 	position: relative;
 }
@@ -252,6 +257,7 @@ section.page img {
 }
 .packages {
 	background: #fff;
+	overflow: hidden;
 }
 .packages li {
 	width: 47%;
@@ -599,3 +605,56 @@ table td {
 	-webkit-transition: opacity 600ms 600ms;
 	transition: opacity 600ms 600ms;
 }
+
+/*** Format pricing ***/
+.left {
+	float: left;
+	width: 40%;
+	margin-right: 30px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.rate,
+.highlight {
+	color: rgb(204,0,0);
+}
+
+.center {
+	text-align: center;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.glow {
+	background: yellow;
+	padding: 1px;
+}
+
+.pricing {
+	overflow: hidden;
+}
+
+.pricing section {
+	border: solid 1px #000;
+	padding: 20px;
+	margin: 14px 10px;
+}
+
+.pricing second:first-child {
+	background: #eee;
+}
+
+.pricing section p {
+	margin: 10px 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/*** end format pricing ***/

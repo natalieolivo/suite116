@@ -70,8 +70,13 @@
 }
 
 /**
-	KIDS & Wedding
+	pages
 **/
+.rates,
+.pricing,
+.kids {
+	min-height: 600px;
+}
 .wedding .bx-wrapper,
 .kids .bx-wrapper {
 	margin: 0 auto 20px;

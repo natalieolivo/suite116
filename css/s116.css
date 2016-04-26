@@ -192,9 +192,6 @@ header {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.page section {
-	/*padding: 0 0 0 150px;*/
-}
 
 /** table display centering **/
 .is-table p { 

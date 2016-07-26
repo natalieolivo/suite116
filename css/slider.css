@@ -101,29 +101,29 @@
 }
 
 .kids .bx-wrapper li:nth-child(1) {
-	background: url(../imgs/reptiles.png);	
+	background: url(../imgs/kidspackages/1.jpg);	
 }
 .kids .bx-wrapper li:nth-child(2) {
-	background: url(../imgs/customBirthday.jpg);
+	background: url(../imgs/kidspackages/2.jpg);
 	background-size: cover;
 	background-position: 0 35%;
 }
 .kids .bx-wrapper li:nth-child(3) {
-	background: url(../imgs/customSetup1.jpg);
+	background: url(../imgs/kidspackages/3.jpg);
 	background-size: cover;
 	background-position: 0 35%;
 }
 .kids .bx-wrapper li:nth-child(4) {
-	background: url(../imgs/customSetup2.jpg);
+	background: url(../imgs/kidspackages/5.jpg);
 	background-size: cover;
 }
 .kids .bx-wrapper li:nth-child(5) {
-	background: url(../imgs/invite1.png);
+	background: url(../imgs/kidspackages/6.png);
 	background-position: 44% 72%;
 	background-size: cover;
 }
 .kids .bx-wrapper li:nth-child(6) {
-	background: url(../imgs/invite2.jpg);
+	background: url(../imgs/kidspackages/7.jpg);
 	background-size: 80%;
 	background-position: 52% 23%;
 	background-size: cover;

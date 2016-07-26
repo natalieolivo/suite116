@@ -118,7 +118,7 @@
 	background-size: cover;
 }
 .kids .bx-wrapper li:nth-child(5) {
-	background: url(../imgs/kidspackages/6.png);
+	background: url(../imgs/kidspackages/6.jpg);
 	background-position: 44% 72%;
 	background-size: cover;
 }
@@ -128,16 +128,30 @@
 	background-position: 52% 23%;
 	background-size: cover;
 }
-/*.wedding .bx-wrapper li:nth-child(1) {
-	background: url(../imgs/wedding1.jpg);
-	background-size: 100%;
-	background-position: 52% 23%;	
+.kids .bx-wrapper li:nth-child(7) {
+	background: url(../imgs/kidspackages/7.jpg);
+	background-size: 80%;
+	background-position: 52% 23%;
+	background-size: cover;
 }
-.wedding .bx-wrapper li:nth-child(2) {
-	background: url(../imgs/043c27_8c1b5778a52441968d68010e3d1ba9b7.jpg);
-	background-size: 100%;
-	background-position: 52% 23%;	
-}*/
+.kids .bx-wrapper li:nth-child(8) {
+	background: url(../imgs/kidspackages/8.jpg);
+	background-size: 80%;
+	background-position: 52% 23%;
+	background-size: cover;
+}
+.kids .bx-wrapper li:nth-child(9) {
+	background: url(../imgs/kidspackages/9.jpg);
+	background-size: 80%;
+	background-position: 52% 23%;
+	background-size: cover;
+}
+.kids .bx-wrapper li:nth-child(10) {
+	background: url(../imgs/kidspackages/10.jpg);
+	background-size: 80%;
+	background-position: 52% 23%;
+	background-size: cover;
+}
 
 @media (max-width: 768px) {
 	.bx-controls-direction a {

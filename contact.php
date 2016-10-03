@@ -31,7 +31,7 @@ $Mode = $_POST['Mode'];
 $validationOK=true;
 $invalidType='';
 
-if ($Mode!="wedding" && $Mode!="kids" && $Mode!="repast") {
+if ($Mode!="wedding" && $Mode!="kids-party-harlem" && $Mode!="repast") {
 	//if (Trim($EmailFrom)=="") $validationOK=false;
 	if (Trim($FirstName)=="") {$validationOK=false; $invalidType=$invalidType.'FirstName+';}
 	if (Trim($LastName)=="") {$validationOK=false; $invalidType=$invalidType.'LastName+';} 
